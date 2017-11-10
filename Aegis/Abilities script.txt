@@ -1,0 +1,206 @@
+"toxic_emission"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		
+		"BaseClass"				"ability_datadriven"
+		--"ScriptFile"				"toxic_emission"
+		
+		"ID"							"0"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_AOE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySound"					"Hero_Corrupted_Aegis_Start_Spray"
+	
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.14"
+		"AbilityCastRange"				"375"
+		"AbilityCooldown"				"0.5"
+		"AbilityManaCost"				"10 15 20 25"
+		"AbilityModifierSupportValue"	"1.0"	// for stats tracking.
+		"AbilityModifierSupportBonus"	"0"		// for stats tracking.
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"								"FIELD_FLOAT"
+				"damage"						"0.1 0.2 0.3 0.4"
+			}
+			"02"
+			{
+				"var_type"								"FIELD_INTEGER"
+				"distance"						"450"
+			}
+			"03"
+			{
+				"var_type"								"FIELD_INTEGER"
+				"start_width"					"250"
+			}
+			"04"
+			{
+				"var_type"								"FIELD_INTEGER"
+				"end_width"					"375"
+			}
+			"05"
+			{
+				"var_type"								"FIELD_FLOAT"
+				"armor_reduction"				"-0.25 -0.35 -0.45 -0.55"
+			}
+			"06"
+			{
+				"var_type"								"FIELD_FLOAT"
+				"magic_reduction"				"-0.25 -0.5 -0.75 -1"
+			}
+			"07"
+			{
+				"var_type"								"FIELD_INTEGER"
+				"mana_per_sec"					"10 15 20 25"
+			}
+		}
+		
+		"OnToggleOn"
+		{
+			"ThinkInterval"	"0.5"
+		
+			"OnIntervalThink"
+			{
+				"Target"
+				{
+					"Center"	"CASTER"
+					"Target"	"TARGET"
+					"Line"
+					{
+						"Length"	"%distance"
+						"Width"		"%start_width"
+					}
+				}
+				
+				"RunScript"
+				{
+					"ScriptFile"	"toxic_emission.lua"
+					"Function"		"Toxidize"
+				}
+			}
+		}
+		
+	}
+"focus_none"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"0"		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"focus_type"				"0"
+			}
+		}
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"toxic_emission.lua"
+				"Function"		"Swap"
+			}
+		}
+	}
+[["focus_physical"
+	{
+		"ID"							"0"		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"OnCastbar"						"1"
+		"OnLearnbar"					"1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"focus_type"				"1"
+			}
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"focus_mag_res_per_armor"				"0.5"
+			}
+		}
+	}
+"focus_magical"
+	{
+		"ID"							"0"		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"OnCastbar"						"1"
+		"OnLearnbar"					"1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"focus_type"				"2"
+			}
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"focus_armor_per_mag_res"				"0.33"
+			}
+		}
+	}
+]]
+"mesh_armor"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"0"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"OnCastbar"						"1"
+		"OnLearnbar"					"1"
+		"FightRecapLevel"				"0"
+		"MaxLevel"						"3"
+	
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"1.0"	// for stats tracking.
+		"AbilityModifierSupportBonus"	"0"		// for stats tracking.
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mesh_armor_health_per_str"	"5 10 15"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"mesh_armor_armor_per_agi"	"0.10 0.12 0.14"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"mesh_armor_mag_res_per_int"		"0.12 0.14 0.16"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"mesh_armor_hp_regen_per_str"	"0.03 0.06 0.09"
+			}
+			
+		}
+	}
+	
