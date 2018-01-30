@@ -1,0 +1,89 @@
+Hero name				: Ultimate warrior
+
+Base health regen		: 1.5
+Base mana regen			: 0.9
+Base attack damage		: 40-40
+Base attack time		: 1.6
+Base armor				: 1
+Base magic resistance	: 25%
+Base movement speed		: 300
+Base turn rate			: 0.7
+Day/night vision		: 1800/800
+
+Attack animation		: 0.11+0.22
+Attack type				: Melee
+Attack range			: 150
+Projectile speed		: Instant
+
+Hero collision size		: 24
+
+Number of legs			: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 17 + 0.6
+*AGI	: 8 + 8
+ INT	: 24 + 0.5
+
+(Possible list of abilities)
+Abilities:
+-----------------------------------------------------------
+Name: Dash	| Ability type: Point target	| Affects: Enemies	|
+Damage: Physical	| Does not pierce spell immunity
+
+Description:
+Dashes to a target location, dealing damage to enemies on the way.
+The damage is based on base damage and damage from attributes.
+On-hit effects are applied normally but bonus damage(green number)
+is not applied.
+
+Distance: 900											Manacost: 100
+Speed: 600/700/800/900							Cooldown: 64/32/16/8
+--------------------------------------------------------------------------------
+Name: Throw blade	| Ability type: Point target	| Affects: Enemies	|
+Damage: Physical	| Does not pierce spell immunity
+
+Description:
+Throws a projectile which damages enemies based on basic attack
+damage. Enemies hit are also slowed. The caster is disarmed for the
+duration of the throw. The projectile returns to the caster after reaching
+max range.
+
+Max range: 1100
+Damage: 50 + 50%/65%/80%/95% of basic attack damage.
+Slow: 10%/15%/20%/25%						Manacost: 60
+Slow duration: 2									Cooldown: 34/28/22/16
+--------------------------------------------------------------------------------
+Name: Rejuvenate		| Ability type: No target		| Affects: Self
+
+Description:
+Starts regenerating health and mana for a certain duration. If damage
+is taken during the regeneration, it is reduced by 75% for the remaining
+duration. The regeneration is based on the amount of HP missing.
+
+Heal:  3/6/9/12 + 2%/3%/4% of missing HP
+Mana: 2/3/4/5 + 1%/2%/3% of missing MP
+Duration: 6/7/8
+															Manacost: 5/10/20/40 + 20/30/40/50% of current mana
+															Cooldown: 60/42/24
+--------------------------------------------------------------------------------
+Name: Boost			| Ability type: No target		| Affects: Self
+
+Description:
+Causes all bonus non-primary attributes to be funneled into caster's
+primary attribute for a duration. Upon cast, it takes one second to fully
+funnel the attributes. Can be dispelled.
+
+Duration: 2/3/4										Cooldown: 50
+
+
+
+
+Hero lore:
+
+
+Hero role:
+
+
+(for 3D modelling purposes)
+Hero theme:

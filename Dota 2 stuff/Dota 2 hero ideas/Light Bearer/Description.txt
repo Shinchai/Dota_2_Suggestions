@@ -1,0 +1,92 @@
+Hero name				:
+
+Base health regen		: 2.5
+Base mana regen			: 0.9
+Base attack damage		: 65-75
+Base attack time		: 2.4
+Base armor				: -0.4
+Base magic resistance	: 25%
+Base movement speed		: 270
+Base turn rate			: 0.3
+Day/night vision		: 1800/975
+
+Attack animation		: 0.91 + 0.67
+Attack type				: Melee
+Attack range			: 325
+Projectile speed		: Instant
+
+Hero collision size		: 24
+
+Number of legs			: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+*STR	: 30 + 2.4
+ AGI	: 9 + 2.1
+ INT	: 16 + 2
+
+(Possible list of abilities)
+Abilities:
+
+------------------------------------------------------
+Name: Skyfall		| Ability type: Point Target		| Does not pierce spell immunity
+{
+Description:
+Fells the giant blade, sending a giant wave that deals magical damage based on the combined
+attribute values. The damage deteriorates per 100 units travelled. Has a cast time of 1.34 seconds. 
+The wave travels at a speed of 1500.
+
+Damage: 250/400/550 + 2/2.25/2.5x(STR+AGI+INT)
+Wave width: 175/200/225
+Wave distance: 3000/3500/4000									Manacost: 200/300/400
+Damage deterioration: 2.5% of initial damage.				Cooldown: 120/90/60
+}
+-------------------------------------------------------
+Name: Arcane Cleave	| Ability type: Target Unit	| Does not pierce spell immunity
+{
+Description:
+Strikes a target, dealing normal damage as well as a magical cleave.
+
+Magical damage on target & cleave: 45%/60%/75%/90%
+Cleave distance: 450/525/600/675
+Starting cleave width: 280						Manacost: 25/50/75/100
+Ending cleave width: 520						Cooldown: 21/17/12/6
+}
+-------------------------------------------------------
+Name: Overcharge blade	|	Ability type: Passive, Toggled	| Does not pierce spell immunity
+{
+Description:
+Overcharges the blade when at full mana. Stacks overcharge buffs based on mana regen up to 100 
+charges. Consumes charges every attack to speed up attack and burn mana. Illusions can use this 
+passive but can't gain charges and consume 50 charges per attack. Gains 1 charge per second per 1 
+point of mana regen. If toggled on and on full charge, Ulting will consume all the charges to
+increase its potency.
+
+Charges consumed per attack: 10/11/13/15
+Attack speed bonus: 15/30/45/60
+Manaburn: 20/45/60/75
+
+Skyfall wave speed bonus: 500
+Skyfall damage multiplier bonus: 0.5x
+}
+--------------------------------------------------------
+Name: Void fissure		| Ability type: Point Target	| Does not pierce spell immunity
+{
+Description:
+Creates a magical void in a line, pulling enemies near to it and rooting them if fully pulled.
+
+Void length: 1025/1150/1275/1400
+Void pull radius: 125/150/175/200
+Pull duration: 0.33								Manacost: 110
+Root duration: 1.5								Cooldown: 50/40/30/20
+}
+
+Hero lore:
+
+
+Hero role:
+Magical carry. Specializes in combining his abilities to deal heavy damage. Pull and root, ulti from
+point blank range, and cleave the remaining.
+
+(for 3D modelling purposes)
+Hero theme: Wields huge and long two-hander, glowing blade, bulky humanoid, aged.

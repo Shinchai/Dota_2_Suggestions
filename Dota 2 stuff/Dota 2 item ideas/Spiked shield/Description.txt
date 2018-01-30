@@ -1,0 +1,26 @@
+Name: Spiked Shield
+
+Requirements:
+	Stout Shield(200)
+	Quelling Blade(200)
+	Ironwood Branch(50) x5
+	
+Total cost: 650 gold
+	
+Abilities:
+
+	Passive: Damage Block :Damage: Physical
+		Has 50% chance to block 20/10 damage for melee/ranged heroes.
+		Upon triggering, returns the blocked damage back to the attacker.
+		
+		Multiple triggers of this passive do not stack
+		
+	Passive: Return :Damage : Pure
+		Upon getting hit by a basic attack, returns a flat 5 damage to the
+		attacker. Enemies within melee range of the user also take 5
+		damage per second.
+		
+		Multiple instances of this passive do not stack.
+		
+	+5 All attributes.
+	

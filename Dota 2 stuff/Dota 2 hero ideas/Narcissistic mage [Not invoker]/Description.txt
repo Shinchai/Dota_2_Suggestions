@@ -1,0 +1,98 @@
+Hero name					: 
+Base health regen			: 1.5
+Base mana regen			: 0.9
+Base attack damage		: 9-18
+Base attack time			: 1.7
+Base armor					: 0
+Base magic resistance	: 25%
+Base movement speed	: 295
+Base turn rate				: 0.6
+Day/night vision				: 1800/800
+
+Attack animation			: 0.43+0.22
+Attack type					: Ranged
+Attack range					: 600
+Projectile speed				: 2500
+
+Hero collision size			: 24
+
+Number of legs				: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 14 + 1.6
+ AGI	: 15 + 1.4
+*INT	: 33 + 3.5
+
+(Possible list of abilities)
+Abilities:
+--------------------------------------------------------------------------------
+Name: Disguise	| Ability Type: Unit Target	| Pierces Spell immunity
+
+Description:
+Transforms the target into a copy of the caster, the target remains
+disguised until it casts an ability(excludes items).
+
+Cast range: 300/500/700/900					Manacost: 100/85/70/55
+															Cooldown: 12/10/8/6
+--------------------------------------------------------------------------------
+Name: Decoy	| Ability Type: No Target		| Pierces Spell Immunity
+
+Description:
+Creates an uncontrollable illusion that roams randomly around the map.
+Allies near the caster also have an illusion of them created. The illusions
+will not appear or expire in areas enemies have vision over. Can be cast
+again within 1 second after primary cast to spawn extra illusions.
+Illusions from this ability will not attack unless the caster is
+attacking a nearby target. If second casted, illusions will no longer
+attack nearby enemies that the caster is attacking.
+
+Number of illusions per ally and self: 1
+Second cast illusions per ally and self: 2
+Illusion damage dealt: 15%/20%/25%
+Illusion damage taken: 250%						Manacost: 200
+Illusion duration: 6/9/12								Cooldown: 122/99/72			
+--------------------------------------------------------------------------------
+Name: Disruptive shot	| Ability Type: Point Target	| Pierces Spell Immunity
+
+Description:
+Launches a projectile in a straight line. The first enemy it hits becomes
+stunned and enemies within radius of that target have their vision
+removed for a while. Also creates two illusions of the target that is on
+their side; these illusions copy the target's movements.The illusions' spawn
+is delayed by 0.66 seconds. Also dispells; any dispelled buff has a chance
+to be applied to one of the illusions. The illusions fully appear as heroes
+to the enemy team but as illusions to allies of the caster. The illusions 
+provide vision for both teams. Allies killing buffed illusions from this
+ability gain the buff for themselves.
+
+Stun: 0.66/0.88/1.10/1.31
+Vision reduction: 100%
+Vision reduction duration: 0.77/0.99/1.21/1.42
+Radius: 220/330/440/550
+Illusions damage dealt: 0%
+Illusions damage received: 100%
+Illusion duration: 4/5/6/7							Manacost: 160	
+Dispel type: Basic Dispel							Cooldown:  50/45/40/35
+--------------------------------------------------------------------------------
+Name: Realized attacks	|	Ability type: Unit Target, Passive	| Pierces Spell Immunity
+
+Description:
+Causes illusions of the ability owner to place a stacking debuff on 
+targets they attack. Upon activation, the target is attacked a number of 
+times instantly, depending on the number of stacks it has. The damage 
+is based on the ability owner. The debuff is not purgeable.
+
+Stacks required for one attack: 5/4/3/3				Manacost: 75
+Stack duration: 5/6/8/10									Cooldown: 8
+
+
+
+Hero lore:
+
+
+Hero role:
+
+
+(for 3D modelling purposes)
+Hero theme:

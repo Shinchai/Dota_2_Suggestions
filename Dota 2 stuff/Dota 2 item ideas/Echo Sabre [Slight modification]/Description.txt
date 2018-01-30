@@ -1,0 +1,21 @@
+Passive: Echo Strike
+
+	Old mechanic:
+		Upon triggering, maximize attack speed for 1 attack.
+		
+	New mechanic:
+		Upon triggering, create a ghost character that strikes the unit it was
+		triggered on. 
+		
+	This relieves the hero from having to strike again as the ghost hero
+	will automatically strike for him.
+	
+	Old mechanic scenario:
+	-hero hits, triggering echo.
+	-Echo buff applied to hero, hero has to hit again to make use of 
+	the attack speed.
+	
+	New mechanic scenario:
+	
+	-Hero hits, triggering echo.
+	-Echo starts hitting, hero is free to move away or start hit animation 

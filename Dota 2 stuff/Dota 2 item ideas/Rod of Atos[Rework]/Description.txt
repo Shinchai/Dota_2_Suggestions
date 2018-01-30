@@ -1,0 +1,9 @@
+Old Mechanic:
+	Launches a projectile towards a target which if connects, the target is
+	rooted for 2 seconds.
+	
+New Mechanic:
+	Launches a slightly faster but much more visible & audible projectile 
+	towards a target. Upon hit, the target is stunned for 0.6 seconds and 
+	then rooted for 1.5 seconds. Enemies surrounding the target are 
+	knocked away 350 units from the target.

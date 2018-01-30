@@ -1,0 +1,114 @@
+Hero name				: Recruiter
+
+Base health regen		: 1.5
+Base mana regen			: 0.9
+Base attack damage		: 20-21
+Base attack time		: 2.2
+Base armor				: 0
+Base magic resistance	: 0%
+Base movement speed		: 340
+Base turn rate			: 0.9
+Day/night vision		: 1800/1000
+
+Attack animation		: 0.17+1.2
+Attack type				: Ranged
+Attack range			: 660
+Projectile speed		: 2750
+
+Hero collision size		: 12
+
+Number of legs			: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+*STR	: 27 + 1.6
+ AGI		: 6 + 1.9
+ INT		: 33 + 2.6
+
+(Possible list of abilities)
+Abilities:
+-----------------------------------------------------------
+Name: Recruit	| Ability type: Unit target	| Affects: Enemies	|
+Damage: Variable	| Pierces spell immunity
+
+Description:
+Strikes an enemy, dealing damage. If the enemy dies to the
+damage, it is turned into a skeleton under control of the caster. The
+damage type will be the lowest resistance of the target. The skeletons
+will have all the properties of the killed unit but will have no armor or
+magical resistance. They are permanent. Skeletons can't have abilities
+or passives. There is 1 second grace time in which the death triggers
+this effect.
+
+Damage: 100/160/220/340					Manacost: 80/120/160/200
+														Cooldown: 24/20/16/12
+														
+TALENTS:
+- 100 manacost reduction
+- +5/15% minion armor & magic resistance
+--------------------------------------------------------------------------------
+Name: Rapid fire	|	Ability type: Unit target	| Affects: Enemies	|
+Damage: Magical	| Does not pierce spell immunity
+
+Description:
+Fires 10/10/20/30 projectiles at the target. The caster becomes disarmed
+for the duration of the cooldown.
+
+Damage per projectile: 12/13/14/15
+Attack speed: 5/7.5/10/15 shots per sec		Manacost: 75
+Cast range: 512/625/738/850						Cooldown:16/15/14/13
+
+TALENTS:
+- +10 Shots per sec
+- Deals physical damage
+--------------------------------------------------------------------------------
+Name: Scatter	| Ability type: No target, Toggled	| Affects: Self
+
+Description:
+Scatters self into pieces, while scattered, all indicators on the caster
+are hidden but the caster can still be targeted. Can't move while active.
+While scattered, can gather self to return to normal. Gather takes
+1.5 seconds.
+
+															Cooldown: 3
+															
+TALENTS:
+- Turns caster invisible
+--------------------------------------------------------------------------------
+Name: Consume	| Ability type: Unit target	| Affects: Controlled summons
+
+Description:
+Consumes a controlled skeleton minion to gain its health and mana.
+Can be used on creeps to restore for half values.
+The heal occurs in a span of 4 seconds.
+
+Health regen: 40%/60%/80%/100%				Manacost: 20/40/60/80
+Mana regen: 55%/70%/85%/100%					Cooldown: 60/45/30/15
+--------------------------------------------------------------------------------
+Name: Ring of Death	| Ability type: Unit target	|	Affects: Controlled summons
+
+Description:
+Rallies all summoned skellies to target point. There, the skellies form an
+impassable ring, preventing enemies and allies from entering or leaving.
+The skellies turn to stone upon taking position, recieving armor and magic
+resistance. The skellies also recieve bonus movespeed until they reach
+their destination. Any skeleton that forms the ring dies at the end of the
+duration.
+
+Bonus speed: 40%/60%/80%
+Bonus armor: 10/20/30
+Bonus magic resistance: 25%/40%/55%			Manacost: 175/275/400
+Duration: 7/9/11											Cooldown: 100
+
+TALENTS:
+- Upon caster reaching 0 hp, a skeleton sacrifices itself to heal the owner.
+
+Hero lore:
+
+Hero role:
+Powerful early to mid-game ganker. Can slowly recruit a giant army
+of skeletons to increase pressure on enemies.
+
+
+(for 3D modelling purposes)
+Hero theme: Skeleton, Abomination, Monstrous, Somewhat big.

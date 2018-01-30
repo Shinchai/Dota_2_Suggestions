@@ -1,0 +1,132 @@
+Hero name				: Chaos Vagabond
+
+Base health regen		: 1.5
+Base mana regen			: 0.9
+Base attack damage		: 26-30
+Base attack time		: 2
+Base armor				: 3
+Base magic resistance	: 25%
+Base movement speed		: 315
+Base turn rate			: 0.7
+Day/night vision		: 1800/1800
+
+Attack animation		: 0.7+0.43
+Attack type				: Ranged
+Attack range			: 500
+Projectile speed		: Instant
+
+Hero collision size		: 24
+
+Number of legs			: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 19 + 1.3
+*AGI	: 23 + 2.9
+ INT	: 18 + 2.8
+
+(Possible list of abilities)
+Abilities:
+--------------------------------------------------------------------------------
+Name: Flail proficiency	| Ability Type: Passive, autocast
+
+Description:
+Medium range attacks have 50 bonus attack speed while long range
+attacks have 50% increased attack damage. While togged on, consumes
+mana to deal extra magical damage. Also grants bonus attack range 
+passively. The bonus magical damage is taken from the physical damage. 
+Does not count bonus damage(green numbers).
+
+Bonus attack range: 25/50/75/100
+Medium range: 300-450
+Long range: >500
+Mana consumed: 15/20/25/30
+Magical damage: 15%/25%/35%/45% of attack damage
+
+TALENTS:
+- Double magical damage %
+- +200 Attack range
+--------------------------------------------------------------------------------
+Name: Latch	|	Ability type: Auto cast	| Affects: Enemies	|
+Does not pierce spell immunity
+
+Description:
+Strikes an enemy unit and prevents it from getting away from the
+caster's max attack range. The caster is disarmed for the duration of
+the latch.The target bleeds after the latch is pulled and is magical.
+
+Latch range: Same as attack range
+Bleed dps: 20/25/30/35
+Bleed duration: 5
+Duration: 2/3/4/5									Cooldown:20/16/12/8
+
+TALENTS:
+- 4 Sec cooldown reduction
+- +40 Bleed damage
+--------------------------------------------------------------------------------
+Name: Flail	| Ability type: Point target	| Affects: Enemies
+Damage type: Magical	| Pierces spell immunity
+
+Description:
+Swings the flail around the caster, the radius of the flailing depends on
+the distance from the caster and the cast point. Enemies are damaged
+and slowed each time they are hit by the flail.
+
+Max range: 750
+Min range: 250 
+Flail speed: 900/1000/1100/1200
+Damage: 80/110/140/170
+Slow: 15%/20%/25%/30%
+Slow duration: 0.6/0.8/1/1.2					Manacost: 60
+Duration: 3/3.75/4.5/5.25						Cooldown: 54/45/36/27
+
+TALENTS:
+- +400 Flail speed
+
+--------------------------------------------------------------------------------
+Name: Alternate form	| Ability type: No target	| Affects: Self
+
+Description:
+
+Transforms into a stony form, gaining bonus speed, attack speed,
+damage and an ability.
+
+Speed: 3.5%/7%/14%
+Attack speed: 20/40/80							Manacost: 150/250/350
+Damage: 20/35/70									Cooldown: 90
+Duration: 9/14/20
+
+TALENTS:
+- 40 Sec cooldown reduction
+- 6% speed & +40 Atkspd/dmg
+--------------------------------------------------------------------------------
+Name: Leap	|	Ability type: Point target	| Sub-ability of Ultimate	|
+Requires Ultimate buff to cast
+
+Description:
+Leap towards the targeted point, if an enemy is within 75 range of the 
+caster upon landing, it is slowed. 
+
+Leap distance: 600/700/800
+Leap speed: 650/800/950
+Slow: 22%/33%/44%								Manacost: 75
+Slow duration: 1.5									Cooldown: 4
+
+TALENTS:
+
+- + 300 Leap distance & speed
+- +34% Leap slow
+--------------------------------------------------------------------------------
+
+Hero lore :Race: Human-Demon :Age: [20-25][80-120] :Gender: [Female][Male]
+
+The spectral bandit is the result of a body merge between a human and 
+a demon. I'd write more but I realized this kind of makes little sense.
+
+Hero role: 
+
+
+(for 3D modelling purposes)
+Hero theme: Human body without the head, neck area has stony
+formations, head is composed of pieces of dark rocks, bandit clothing,
+wields a sharp flail.

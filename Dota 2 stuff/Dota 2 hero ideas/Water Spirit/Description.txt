@@ -1,0 +1,120 @@
+Hero name				: Water Spirit
+
+Base health regen		: 1.5
+Base mana regen			: 0.9
+Base attack damage		: 27-30
+Base attack time		: 1.7
+Base armor				: -0.6
+Base magic resistance	: 25%
+Base movement speed		: 290
+Base turn rate			: 0.5
+Day/night vision		: 1800/800
+
+Attack animation		: 0.61+0.33
+Attack type				: Ranged
+Attack range			: 500
+Projectile speed		: 1200
+
+Hero collision size		: 24
+
+Number of legs			: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 12 + 2.3
+ AGI	: 14 + 1.9
+*INT	: 24 + 2.9
+
+(Possible list of abilities)
+Abilities:
+-----------------------------------------------------------
+Name: Divide			| Cast type: No target
+{
+Description:
+Divides self into two lesser spirits of the caster with halved attributes. The lesser versions can 
+cast "Divide" to create minor spirits. The spirits are clones but can't use items, though they will 
+benefit from any passive effects. The spirits can use runes. If one spirit dies, the caster regains 
+the attributes of the fallen spirit but does not heal back the health or mana. If a spirit merges 
+with another, their attributes add up and their current healths are merged. Base attributes are also
+reduced with the exception of movement speed. If one spirit remains, the Water Spirit is restored. 
+Lesser spirits are indistinguishable from the main spirit. Grants gold bounty based on the % of 
+attributes compared to the original spirit.
+
+Max possible spirits: 4							Manacost: 25/20/15/10
+Attribute reduction: 50%						Cooldown: 1
+}
+--------------------------------------------------------------
+Name: Explode Spirit	| Cast type: Target ally	| Damage type: Magical	| 
+Ability type: Sub-ability	| Does not pierce Spell immunity
+{
+Description:
+Detonates the targeted spirit, dealing damage and slowing enemy units nearby it. The caster regains 
+the attributes of the exploded spirit but does not regain any health or mana.
+
+Radius: 325
+Damage: 75/150/225/300
+Slow: 12%/18%/26%/32%							Manacost: 140/125/110/95
+Slow duration: 3								Cooldown: 0
+}
+-------------------------------------------------------------
+Name: Liquid form		| Cast type: No Target, Toggle	| Does not pierce Spell immunity
+{
+Description:
+Hides the selected spirit and creates a puddle around it. The puddle is untargetable but AoE damage
+can still affect it. Any enemy within the puddle takes escalating damage and is also slowed based on
+how close they are to the center. Damage ticks every half second. Costs mana per second. The 
+cooldown is applied after coming out of the puddle.
+
+Radius: 225/275/325/375
+Mana per second: 30/25/20/15
+Initial damage: 15/25/35/45
+Bonus damage per tick: 5/7.5/10/12.5
+Max slow: 20%/25%/30%/35%							Manacost: 140
+Min slow: 6%/9%/12%/15%								Cooldown: 21/16/11/6
+}
+---------------------------------------------------------------
+Name: Water stream		| Cast type: Point Target	| Does not pierce Spell immunity on enemies
+{
+Description:
+Launches a stream of water at a target. If the target is an ally, it will be healed and dispelled on
+the last stream projectile. If enemy, then it will take damage and be slowed. Launches 8 projectiles
+in 2 seconds. Each slow instance is seperate and stacks with each other but does not refresh the 
+duration. Projectile speed is 750.
+
+Cast range: 900
+Total heal: 80/120/160/200
+Dispel type: Basic Dispel
+Total damage: 100/200/300/400
+Total slow: 24%/32%/40%/48%							Manacost: 10/15/20/25(per projectile)
+Slow duration: 5									Cooldown: 28/24/20/16
+}
+----------------------------------------------------------------
+Name: Fluidity			| Cast type: Target unit	| Does not pierce Spell immunity
+{
+Description:
+Causes a special effect depending on the target. If the target is a spirit or self, all other 
+spirits are transformed into orbs which travel to the targeted spirit and merges with it. If the 
+target is a puddle, causes a vortex effect on all enemies that are inside that puddle, pulling them
+to the center of the puddle. If the target is a creep, it is consumed after a delay to heal the 
+spirit consuming it. If the target is an ally hero and the spirit is lesser or weaker, the chosen 
+spirit will become armor for that ally, absorbing all damage as pure to itself until the spirit dies
+or leaves the ally. If the target is an enemy, the will slow the target and block any spells cast by
+the target's allies on it, the spirit can be attacked while slowing an enemy. Spirits riding on 
+allies or enemies can't do anything except detach.
+
+Orb speed: 550/700/950
+Vortex pull per second: 150/250/350
+Heal delay: 3
+Heal power: 50%/75%/100% of target's current health
+Heal duration: 6/5/4 (Speeds up the healing rate)		Manacost: 80
+Slow: 25%/35%/45%										Cooldown: 1
+}
+
+Hero lore:
+
+
+Hero role:
+Carry with the ability to farm fast, trap enemies or support allies.
+
+(for 3D modelling purposes)
+Hero theme:Made of water, chinese themed, a bit similar to the other spirits.

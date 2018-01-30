@@ -1,0 +1,83 @@
+Hero name		: Apocalypse
+
+Base health regen	: 1.5
+Base mana regen		: 1.5
+Base attack damage	: 26 - 30
+Base attack time	: 1.7
+Base armor		: 6
+Base magic resistance	: 25%
+Base movement speed	: 265
+Base turn rate		: 0.4
+Day/night vision	: 1600/800
+
+Attack animation	: 0.5 + 0.33
+Attack type		: Melee
+Attack range		: 150
+Projectile speed	: Instant
+
+Hero collision size	: 28
+
+Number of legs		: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+*STR	: 29 + 3.1
+ AGI		: 12 + 2.4
+ INT		: 8 + 1.6
+
+(Possible list of abilities)
+Abilities:
+--------------------------------------------------------------------------------
+Name: Shadow Orb	| Ability type: Point Target	| Damage Type: Magical	| Does not pierce spell immunity
+
+Description:
+Launches a ball of dark energy. The projectiles passes through units
+and terrain until it reaches max range. Deals Damage every tick to
+any unit it is colliding with. Will deal approximately, two ticks of damage
+to a stationary target and 1 to a target moving towards the projectile.
+The orb does not lock onto targets.
+
+Projectile Range: 1100/1400/1700/2000
+Projectile Speed: 1000
+Projectile DpS: 40/110/180/250
+Tick rate: 4 per second										Manacost: 200
+																		Cooldown: 18
+--------------------------------------------------------------------------------
+Name: Overcharge		| Ability Type: Hidden, Passive
+
+Description:
+The hero can gain infinite mana from his own regeneration(cant overgain
+from buffs).
+--------------------------------------------------------------------------------
+Name: Apocalypse		| Ability Type: No Target		| Damage Type: Magical	| Does not pierce spell immunity
+
+Description:
+Creates a damaging effect in a radius around the caster. The radius and
+damage depend on the amount of mana past max mana the caster has.
+The abilty has a cast time of 0.59 seconds. If the caster has more than
+1000 overmana, he will take damage from this ability after a 2 second
+delay. The self-damage is dealt over 6 seconds.
+
+Base damage: 250
+Base radius: 500
+
+Radius increase per 1 overmana: 0.5
+Damage increase per 1 overmana: 1
+
+---------------------------------------------------------------------------------
+Hero lore :Race: Human :Age: 27 - 35 :Height: 192cm :Gender: Male
+
+Similar to Silencer's role, this guy is an experiment of genetic enhancement
+towards a more powerful magical being. The result is a guy who can store
+mana inside his body AND outside his body without using any items.
+Realizing how strong he can be, this guy decides to learn and master
+spells that gain power the more mana one has and use that to prevent
+factions from making humans like him. He kills the guys who made
+him btw.
+
+Hero role:
+
+
+
+(for 3D modelling purposes)
+Hero theme: Clad in heavy dark grey armor with dark runic effects.

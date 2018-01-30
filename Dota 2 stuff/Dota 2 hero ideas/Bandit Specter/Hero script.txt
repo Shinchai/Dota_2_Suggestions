@@ -1,0 +1,149 @@
+	//=================================================================================================================
+	// HERO: Realm Nomad
+	//=================================================================================================================
+	"npc_dota_nomad"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Model"		"models/heroes/nomad/nomad.vmdl"
+		"SoundSet"		"Hero_Nomad"
+		"IdleExpression"		"scenes/nomad/nomad_exp_idle_01.vcd"
+		"HeroID"		""
+		"Enabled"		"1"
+		"HeroUnlockOrder"		"1"
+		"Role"			"Carry, Escape, Pusher"
+		"Rolelevels"	"3,1,2"
+		"Complexity"	"2"
+		"Team"		"Bad"
+		"Portrait"		"vgui/hud/heroportraits/portrait_nomad"
+		"ModelScale"		"0.900000"
+		"HeroGlowColor"		"120 64 148"
+		"PickSound"		"nomad_nomad_spawn_01"
+		"BanSound"		"nomad_nomad_anger_04"
+		"CMEnabled"		"0"
+		"workshop_guide_name"		"nomad"
+		"LastHitChallengeRival"		""
+		"HeroSelectSoundEffect"		"Hero_Nomad.Pick"
+
+		// Abilities
+		//-------------------------------------------------------------------------------------------------------------
+		"Ability1"		"nomad_latch"
+		"Ability2"		"nomad_flail"
+		"Ability3"		"nomad_flail_proficiency"
+		"Ability4"		"nomad_leap"
+		"Ability5"		"nomad_true_form"
+		"Ability10"		"special_bonus_"
+		"Ability11"		"special_bonus_"
+		"Ability12"		"special_bonus_"
+		"Ability13"		"special_bonus_unique_nomad"
+		"Ability14"		"special_bonus_"
+		"Ability15"		"special_bonus_"
+		"Ability16"		"special_bonus_"
+		"Ability17"		"special_bonus_unique_nomad_2"
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"		"3"
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"26"
+		"AttackDamageMax"		"30"
+		"AttackRate"		"2.000000"
+		"AttackAnimationPoint"		"0.700000"
+		"AttackAcquisitionRange"		"600"
+		"AttackRange"		"500"
+		"ProjectileSpeed"		"0"
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"19"
+		"AttributeStrengthGain"		"1.300000"
+		"AttributeBaseIntelligence"		"18"
+		"AttributeIntelligenceGain"		"2.800000"
+		"AttributeBaseAgility"		"23"
+		"AttributeAgilityGain"		"2.900000"
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementSpeed"		"315"
+		"MovementTurnRate"		"0.700000"
+		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+		"particle_folder"		"particles/units/heroes/hero_nomad"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_nomad.vsndevts"
+		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_nomad.vsndevts"
+
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_nomad/nomad_loadout.vpcf"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
+			}
+		}
+
+		// Items
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"500"
+			}
+			"1"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"arms"
+				"SlotText"		"#LoadoutSlot_Arms"
+				"TextureWidth"		"128"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"600"
+				"MaxPolygonsLOD1"		"450"
+			}
+			"2"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"256"
+				"TextureHeight"		"128"
+				"MaxPolygonsLOD0"		"450"
+				"MaxPolygonsLOD1"		"350"
+			}
+			"3"
+			{
+				"SlotIndex"		"6"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+		}
+		"Bot"
+		{
+			"HeroType"		"DOTA_BOT_HARD_CARRY"
+			"LaningInfo"
+			{
+				"SoloDesire"		"1"
+				"RequiresBabysit"		"2"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"2"
+				"RequiresFarm"		"2"
+				"ProvidesSetup"		"0"
+				"RequiresSetup"		"1"
+			}
+		}
+	}

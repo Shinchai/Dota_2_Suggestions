@@ -1,0 +1,134 @@
+Hero name					: Immortal King
+
+Base health regen			: 3.5
+Base mana regen			: 0.9
+Base attack damage		: 55-55
+Base attack time			: 2
+Base armor					: 6
+Base magic resistance	: 25%
+Base movement speed	: 320
+Base turn rate				: 0.7
+Day/night vision				: 1800/1800
+
+Attack animation			: 0.07 + 0.2
+Attack type					: Melee
+Attack range					: 175
+Projectile speed				: Instant
+
+Hero collision size			: 38
+
+Number of legs				: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+*STR	: 25 + 3.2
+ AGI	: 3 + 1
+ INT	: 18 + 2.2
+
+(Possible list of abilities)
+Abilities:
+------------------------------------------------------
+Name: Launch	| Ability type: Point target	| Affects: Enemies	|
+Damage: Varies	| Pierces spell immunity
+
+Description:
+Launches self high into the air, becoming untargetable. Takes significant
+time to reach target location but can manipulate landing spot by right click
+moving. Upon landing, deals damage and applies an effect based on
+chosen aspect. Global cast ability. Upon cast, replaces "Rising kick" and
+"Change aspect" with "Kick down" and "Kick forwards" until landing.
+Can't use items while in the air.
+
+Air time: 6 + 6 seconds
+Damage: 200/400/600					Manacost: 100/150/200
+Radius: 750									Cooldown: 200/160/120
+--------------------------------------------------------------------------------
+Name: Rising kick	| Ability type: Unit target	| Affects: Enemies	|
+Damage: Varies	| Does not pierce spell immunity
+
+Description:
+Dashes towards an enemy and kicks it up into the air. The target becomes
+untargetable to everyone except by using "Launch". The target is first
+stunned then launched into the air.
+
+Air time: 3 + 3 seconds
+Damage: 125/175/225/275					Manacost: 50/75/100/100
+Stun duration: 0.6								Cooldown: 80/70/60/50
+--------------------------------------------------------------------------------
+Name: Spit	| Ability type: Unit target	| Affects: Enemies	|
+Damage: Varies	| Does not pierce spell immunity
+
+Description:
+Spits at the targeted enemy. Dealing damage and applying an effect
+based on chosen aspect.
+
+Damage: 175/250/325/400
+Cast range: 700/900/1100/1300				Manacost: 25
+Projectile speed: 1500							Cooldown: 64/48/32/16
+
+-----------------------
+Name:Recharge		| Ability type: No target	| Sub-ability of "Spit"
+
+Description:
+
+Spend 10 mana to reduce "Spit"s cooldown by 1 second.
+Appears in place of "Spit" as long as it is on cooldown.
+
+																		Cooldown: 1
+--------------------------------------------------------------------------------
+Name: Change aspect	| Ability type: Passive, Toggled
+
+Description:
+Gain increased health regen and, upon casting an ability, get dispelled.
+Active grants a bonus effect to abilities depending on aspect.
+
+Scorching aspect: Damage caused by abilities place a DoT debuff on all
+affected units and turns any damaging effects of a spell to physical.
+
+Freezing aspect: Damage caused by abilities place a move/attack slowing
+debuff and turns any damaging effects of a spell to magical.
+
+HP regen: 1/2.5/4/5.5
+Dispel type: Basic Dispel
+DoT: 5%/6%/7%/8% of max HP
+Move slow: 15%/20%/25%/30%
+Attack slow: 20/30/40/50
+Duration: 3
+--------------------------------------------------------------------------------
+Name: Kick down	| Ability type: Unit target	| Affects: Enemies	|
+Pierces spell immunity	| Sub-ability of "Launch"
+
+Description:
+Kicks the target down to the ground, landing it quickly and dealing damage
+upon landing in an area. The target is stunned upon landing. Can be cast 
+only once per "Launch". Can only hit nearby launched enemies.
+
+Damage: 150/200/250
+Stun: 1/1.25/1.5
+Radius: 500								Manacost: 75
+--------------------------------------------------------------------------------
+Name: Kick forwards	| Ability type: Unit target	| Affects: Enemies	|
+Pierces spell immunity	| Sub-ability of "Launch"
+
+Description:
+Kicks the target forwards, throwing it far and dealing damage upon 
+landing in an area. The target is stunned upon landing. Can be cast 
+only once per "Launch". Can only hit nearby launched enemies.
+
+Damage: 150/200/250
+Stun: 1/1.25/1.5
+Radius: 500								Manacost: 75
+--------------------------------------------------------------------------------
+
+Hero lore :Race: Human(with some modifications) :Age: 2500+ :Height: ~250cm :Gender: Male
+
+Not much to tell since this guy's history is incompatible with dota's.
+
+
+Hero role:
+Designed to have powerful spells at the cost of very high cooldowns.
+Can remove a hero from the map and 1v1 it with the ultimate.
+
+(for 3D modelling purposes)
+Hero theme: Giant, Wears Dark Helmet, Glowng eyes, Dark skin, Wears
+dark cape covering entire body.

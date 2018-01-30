@@ -1,0 +1,103 @@
+Hero name					: Scorching Furnace
+Base health regen			: 2.5
+Base mana regen			: 0.9
+Base attack damage		: 9-18
+Base attack time			: 1.8
+Base armor					: 6
+Base magic resistance	: 25%
+Base movement speed	: 275
+Base turn rate				: 0.3
+Day/night vision				: 1800/1200
+
+Attack animation			: 0.78 + 0.44
+Attack type					: Melee
+Attack range					: 250
+Projectile speed				: Instant
+
+Hero collision size			: 28
+
+Number of legs				: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 19 + 2.1
+ AGI	: 8 + 1.9
+*INT	: 25 + 2.7
+
+(Possible list of abilities)
+Abilities:
+------------------------------------------------------
+Name: Hellfire	| Ability type: Channeled	| Affects: Enemies	|
+Damage: Magical	| Does not pierce spell immunity
+
+Description:
+Strikes the ground and starts channeling. Creates small sized fire streams
+in an area around the caster until channeling finishes or interrupted.
+Enemies struck by a stream take DoT as well as take burn damage. 
+The DoT ticks every half second. Generates 2/2/3/3 fire stream per 
+second. Streams have a 75 radius. Stream formations are random.
+
+Stream Damage per half sec: 50/75/125/175
+Burn Damage per second: 20/35/50/65
+Radius: 800/950/1100/1250
+Channel duration: 4/6/8/10
+Stream duration: 2/2.5/3/3.5						Manacost:275/300/325/350
+Burn duration: 5											Cooldown: 120/100/80/60
+--------------------------------------------------------------------------------
+Name: Heat Wave	| Ability type: Point target	| Affects: Enemy heroes	|
+Damage: Magical	| Does not pierce spell immunity
+
+Description:
+After a long cast time, creates a slowly expanding heat wave which
+damages enemies hit by it and applies a DoT to heroes. The heat wave faces the
+direction of cast. The heat wave has two inversely proportional values,
+the damage and degree of expansion of the heat wave. Lower circumference
+waves deal more damage and vice versa. The wave expands globally.
+Can hit each unit once only. Does not pierce spell immunity but if a spell 
+immune enemy is hit, it is not registered, allowing him to be hit again 
+once spell immunity wears off.
+
+Min angle: 5
+Max angle: 360
+Min damage: 250/300/400
+Max damage: 3333										Manacost: 350/500/650
+Wave speed: 200											Cooldown: 320/260/200
+--------------------------------------------------------------------------------
+Name: Flamethrower	| Ability type: Point target, Toggled	| Affects: Enemies	|
+Damage: Magical	| Does not pierce spell immunity
+
+Description:
+Deals dps in a cone in front of the caster. Enemies damaged by this 
+recieve a DoT effect and a debuff increasing the damage they take.
+Will keep casting in the initial direction once toggled on.
+
+Dps: 60/90/120/150
+DoT: 20/35/50/65
+DoT duration: 4
+Damage amp: 7.5%/12.5%/17.5%/22.5%		Manacost: 30/45/60/75
+Mana per sec: 20/30/40/50							Cooldown: 16/13/10/7
+--------------------------------------------------------------------------------
+Name: Emergency vents	| Ability type: Passive	| Damage: Magical	|
+Does not pierce enemy spell immunity
+
+Description:
+Each buff and debuff on the spell owner grants an effect around it.
+For each buff, grants 4% magic resistance and 2.5% status resistance
+to self and nearby allies.
+For each debuff, grants 15 magic dps and 4% slow to nearby enemies.
+
+Max buff/debuff stacks: 4/6/8/10
+Aura radius: 450
+
+
+
+Hero lore:
+
+
+Hero role: High magic damage hero with high cooldown. Provides
+durability with aura and counters initiation.
+
+
+(for 3D modelling purposes)
+Hero theme: Giant Hollow suit of armour, Glowing inside, wields long
+and heavy torch, fire escapes out of helmet, belly, legs, arms and staff.

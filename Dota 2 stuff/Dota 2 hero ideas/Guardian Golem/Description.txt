@@ -1,0 +1,118 @@
+Hero name		: Guardian Golem
+
+Base health regen	: 2.5
+Base mana regen		: 0.9
+Base attack damage	: 52
+Base attack time	: 1.9
+Base armor		: 3.5
+Base magic resistance	: 25%
+Base movement speed	: 270
+Base turn rate		: 0.3
+Day/night vision	: 1800/800
+
+Attack animation	: 0.66+0.74
+Attack type		: Melee
+Attack range		: 175
+Projectile speed	: Instant
+
+Hero collision size	: 30
+
+Number of legs		: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+*STR	: 26 + 3.4
+ AGI	: 12 + 1.7
+ INT	: 15 + 2.5
+
+(Possible list of abilities)
+Abilities:
+------------------------------------------------------
+Name: Aegis	| Ability Type: Target ally	| Pierces Allied Spell Immunity
+{
+Description:
+The caster places a shield on an allied unit. The shield adds a quarter of the caster's armor and magic resistance
+and a quarter of his max health. Upon cast, the caster loses a quarter of his max health but not armor and 
+magic resistance. Can place a maximum of 2 shields. If the shield is returns to the caster, they regain their max health
+and if the shield is damaged, lose health based on the shield damage. The shield returns if the affected ally 
+moves 2000 range from the caster or is depleted. Can't be cast if the caster has less than quarter of their 
+max health.
+
+Health cost: 25%				Manacost:0
+Cast range: 900				Cooldown:0
+}
+---------------------------------------------------------
+Name: Gas Cannon	| Ability Type: Point target	| Damage type: Magical
+{
+Description:
+Creates a cloud in front of the caster, if the caster is not interrupted within 1.2 seconds,
+the cloud explodes and a projectile is launched which damages the first unit it hits,
+if the damaged unit is killed, the projectile continues until it hits another unit with
+the leftover damage from the killed unit. The AoE moves forward at a speed of 75.
+
+Cloud radius: 250
+AoE damage: 75/125/175/225
+Projectile size: 18
+Projectile distance: 2000/3000/4000
+Projectile speed: 2000/2500/3000/3500			Manacost: 75+9% of max mana
+Projectile damage: 200/300/400/500			Cooldown: 18/15/12/9
+}
+----------------------------------------------------------
+Name: Force Field	| Ability Type: No target
+
+Description:
+Creates a dome centered around the caster, the dome blocks collision
+based spells and shields allies inside. If an enemy hero or collision based
+projectile collides with the dome boundary, the dome is disabled temporarily.
+
+Dome radius: 600
+Ally damage block: 15/25/35/45
+Dome re-activation time: 4/3.25/2.5/1.75
+----------------------------------------------------------
+Name: Void Pillar	| Ability Type: Point target	| Damage type: Magical
+{
+Description:
+Throws down a long pillar which stuns and damages all enemies it lands on and after 1 second delay, starts draining
+mana from all enemies within certain range of the pillar and funnels it to any allies shielded. The pillar is
+composed of 300 by 200 size blocks. The caster gains the mana regen as well.
+
+Pillar length: 900/1200/1500
+Pillar width: 200
+Stun duration: 1
+Damage: 200/325/450
+Drain radius: 350/450/550
+Drain rate: 100/140/180 [220] mana per sec				Manacost: 250/325/400
+Duration: 5													Cooldown: 110/80/60
+}
+-------------------------------------------------------------
+[SCEPTER ABILITY]
+Name: Mana Fission	| Ability Type: No Target		| Damage Type: Magical	| Pierces Spell Immunity
+
+Description:
+After a 1.8 second cast time, channels a strike to the ground under 
+the caster, draining his entire manapool and damaging enemies based 
+on mana drained. Can be cast again to drain HP to quicken DPS. 
+Cancelling the cast will instantly delplete all mana. The ability stops
+once all mana is spent. Damage is dealt in 0.2 second intervals.
+
+Mana drain per second: 175/350/500
+Damage per second: 175/350/500
+Quicken: Health Drain: 3%/4%/5% of max HP
+Quicken: Bonus DPS: 75/150/225
+Max channel duration: 10
+Radius: 800														Cooldown: 180
+
+
+
+
+
+
+Hero lore:
+
+Hero role:
+Guards his allies at the cost of his safety, initiates against enemies by stunning from long
+range and redirecting mana from them to his allies. Enemies coming too close are blasted
+by his cannon. Enemies not so close are also blastable.
+
+(for 3D modelling purposes)
+Hero theme: Golem, made of stone, contains many batteries, wields two detached runes as bracelets

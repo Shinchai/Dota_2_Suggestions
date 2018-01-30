@@ -1,0 +1,71 @@
+Hero name		: Siege Golem
+
+Base health regen	: 2.5
+Base mana regen		: 0.9
+Base attack damage	: 60
+Base attack time	: 2
+Base armor		: 3.5
+Base magic resistance	: 25%
+Base movement speed	: 290
+Base turn rate		: 0.6
+Day/night vision	: 1800/800
+
+Attack animation	: 0.1+0.8
+Attack type		: Ranged
+Attack range		: 650
+Projectile speed	: Instant
+
+Hero collision size	: 24
+
+Number of legs		: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 32 + 3
+*AGI	: 12 + 2.4
+ INT	: 16 + 2.7
+
+(Possible list of abilities)
+Abilities:
+------------------------------------------------------
+Name: Siege	| Ability Type: Point Target	| Damage: Physical	| Pierces Spell immunity
+
+Description:
+Launches a projectile in an arc towards the target point. The projectile
+travels at a fixed speed, meaning longer distance shots take longer
+time to land. Upon landing, deals damage in an area and bonus damage
+at the bullseye.
+
+Cast range: 3000/5000/7000
+Area Damage: 250/350/450
+Pinpoint Damage: 150/250/350							Manacost: 100/125/150
+Minimum time to land: 4 seconds							Cooldown: 14/8/2
+--------------------------------------------------------------------------------
+Name: charged shot	| Ability Type: Autocast	|	Damage: Magical	| Pierces Spell immunity
+
+Description:
+Enhances the caster's basic attack with increased damage, attack range
+and piercing. The caster's gun glows red when this ability is on cooldown.
+The projectile is instant. The caster's attacks become melee and loses
+50% damage for the duration of the cooldown.
+
+Bonus damage: 150%/200%/250%/300%
+Bonus attack range: 350/550/750/950
+Max units pierced: 1/1/2/3(50% damage after each pierce)
+
+																		Manacost: 50/75/100/125
+																		Cooldown: 4/7/10/13
+--------------------------------------------------------------------------------
+
+
+
+
+Hero lore:
+
+Hero role:
+
+
+(for 3D modelling purposes)
+Hero theme: Golem, Has a muscular system made of light gray fibers,
+parts representing tendons appear metallic, Has tubular head with large
+eye at the front, similar to a security camera, bulky, carries a large rail gun.

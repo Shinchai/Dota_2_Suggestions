@@ -1,0 +1,91 @@
+Hero name					: Reflection
+
+Base health regen			: 1
+Base mana regen			: 0.9
+Base attack damage		: 22-22
+Base attack time			: 1
+Base armor					: 0
+Base magic resistance	: 0%
+Base movement speed	: 300
+Base turn rate				: 0.8
+Day/night vision				: 1800/800
+
+Attack animation			: 0.18 + 0.38
+Attack type					: Ranged
+Attack range					: 460
+Projectile speed				: 3000
+
+Hero collision size			: 24
+
+Number of legs				: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 12 + 2.3
+*AGI	: 33 + 2.5
+ INT	: 9 + 1.4
+
+(Possible list of abilities)
+Abilities:
+------------------------------------------------------
+Name: Flicker			| Cast type: Target unit		|	Pierces spell immunity
+{
+Description:
+Swaps places with the target for 0.6 seconds, any projectiles or attacks that would hit the caster
+during this time are reflected onto the swapped target.
+
+Manacost: 0
+Cooldown: 17/14/11/8
+}
+------------------------------------------------------
+Name: Mirage			| Cast type: No target
+{
+Description:
+Become invisible to all forms of detection unless near an enemy hero or tower. Casting, using items
+or attacking will not reveal the caster, but if a non-hero unit is attacked, that unit will count as
+though it were a hero(revealing the caster if near). Recasting while active will refresh the duration without
+revealing the caster.
+
+Reveal distance: 1000/875/750/625								Manacost: 150/100/50/0
+Invisibility duration: 15/20/25/30									Cooldown: 29
+}
+------------------------------------------------------
+Name: Shard bomb	| Cast type: Target ground	| Does not pierce spell immunity
+{
+Description:
+Place a shard bomb at the target point, enemy units that trigger it take magical damage and spawn
+illusions of themselves which attack the closest enemy. The bomb is invisible to enemies and gives
+200 vision. These illusions are uncontrollable.
+
+Trigger radius: 75
+Bomb duration: 60/90/120/150
+Bomb damage: 150/225/300/375
+Illusions spawned: 2/2/3/3
+Illusion damage dealt: 50%/65%/50%/60%
+Illusion damage received: 300%/250%/350%/300%		Manacost: 65
+Illusion duration: 4/5/6/7											Cooldown: 42/34/26/18
+}
+-------------------------------------------------------
+Name: Mirage Aura	| Cast type: No target
+{
+Description:
+Hides all allied units in a radius around the caster, if any affected ally gets near an enemy
+hero/tower or leaves the radius, they are revealed. Unlike "Mirage", the aura does not hide from
+true sight. Does not affect the caster. Has a fade time of 0.4 seconds.
+
+Radius: 400/450/500
+Reveal radius: 900/800/700										Manacost: 100/125/150
+Duration: 8/11/14														Cooldown: 80/70/60
+}
+
+Hero lore:
+
+
+Hero role:
+Unique stealth hero designed to evade vision and detection. Can move allies secretly with a low
+cooldown ultimate and place traps to detect enemy movement. Can save an ally by absorbing hits for
+them or damage an enemy by reflecting critical effects to them.
+
+
+(for 3D modelling purposes)
+Hero theme: Reflective surface, mirror-like, inorganic, eerie animations.

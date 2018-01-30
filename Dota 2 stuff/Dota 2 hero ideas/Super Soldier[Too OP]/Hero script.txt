@@ -1,0 +1,180 @@
+	//=================================================================================================================
+	// HERO: Water spirit
+	//=================================================================================================================
+	"npc_dota_hero_water_spirit"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Model"		"models/heroes/water_spirit/water_spirit.vmdl"
+		"SoundSet"		"Hero_Water_Spirit"
+		"IdleExpression"		"scenes/water_spirit/water_spirit_exp_idle_01.vcd"
+		"HeroID"		""
+		"Enabled"		"1"
+		"HeroUnlockOrder"		"1"
+		"Role"			"Carry,Escape,Initiator,Nuker"
+		"Rolelevels"	"2,3,1,1"
+		"Complexity"	"3"
+		"Team"		"Good"
+		"Portrait"		"vgui/hud/heroportraits/portrait_water_spirit"
+		"ModelScale"		"0.900000"
+		"HeroGlowColor"		"120 64 148"
+		"PickSound"		"water_spirit_water_spawn_01"
+		"BanSound"		"water_spirit_water_anger_04"
+		"CMEnabled"		"0"
+		"NameAliases"		"ws"
+		"workshop_guide_name"		"Water Spirit"
+		"LastHitChallengeRival"		""
+		"HeroSelectSoundEffect"		"Hero_Water_Spirit.Pick"
+
+		// Abilities
+		//-------------------------------------------------------------------------------------------------------------
+		"Ability1"		"water_spirit_water_stream"
+		"Ability2"		"water_spirit_divide"
+		"Ability3"		"water_spirit_liquid_form"
+		"Ability4"		"water_spirit_explode_spirit"
+		"Ability5"		"water_spirit_fluidity"
+		"Ability10"		"special_bonus_"
+		"Ability11"		"special_bonus_"
+		"Ability12"		"special_bonus_"
+		"Ability13"		"special_bonus_unique_water_spirit"
+		"Ability14"		"special_bonus_"
+		"Ability15"		"special_bonus_"
+		"Ability16"		"special_bonus_"
+		"Ability17"		"special_bonus_unique_water_spirit_2"
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"		"-0.6"
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"27"
+		"AttackDamageMax"		"30"
+		"AttackRate"		"1.700000"
+		"AttackAnimationPoint"		"0.610000"
+		"AttackAcquisitionRange"		"600"
+		"AttackRange"		"500"
+		"ProjectileSpeed"		"1200"
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"12"
+		"AttributeStrengthGain"		"2.300000"
+		"AttributeBaseIntelligence"		"24"
+		"AttributeIntelligenceGain"		"2.900000"
+		"AttributeBaseAgility"		"14"
+		"AttributeAgilityGain"		"1.900000"
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementSpeed"		"290"
+		"MovementTurnRate"		"0.500000"
+		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+		"particle_folder"		"particles/units/heroes/hero_water_spirit"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_water_spirit.vsndevts"
+		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_water_spirit.vsndevts"
+
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_water_spirit/water_spirit_loadout.vpcf"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
+			}
+		}
+
+		// Items
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"500"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"armor"
+				"SlotText"		"#LoadoutSlot_Armor"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"600"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"arms"
+				"SlotText"		"#LoadoutSlot_Arms"
+				"TextureWidth"		"128"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"600"
+				"MaxPolygonsLOD1"		"450"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"belt"
+				"SlotText"		"#LoadoutSlot_Belt"
+				"TextureWidth"		"256"
+				"TextureHeight"		"128"
+				"MaxPolygonsLOD0"		"450"
+				"MaxPolygonsLOD1"		"300"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"256"
+				"TextureHeight"		"128"
+				"MaxPolygonsLOD0"		"450"
+				"MaxPolygonsLOD1"		"350"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"waist"
+				"SlotText"		"#LoadoutSlot_Waist"
+				"TextureWidth"		"256"
+				"TextureHeight"		"128"
+				"MaxPolygonsLOD0"		"450"
+				"MaxPolygonsLOD1"		"350"
+			}
+			"6"
+			{
+				"SlotIndex"		"6"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+		}
+		"Bot"
+		{
+			"HeroType"		"DOTA_BOT_HARD_CARRY"
+			"LaningInfo"
+			{
+				"SoloDesire"		"1"
+				"RequiresBabysit"		"2"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"2"
+				"RequiresFarm"		"2"
+				"ProvidesSetup"		"0"
+				"RequiresSetup"		"1"
+			}
+		}
+	}

@@ -1,0 +1,108 @@
+Hero name				: 
+
+Base health regen		: 1.5
+Base mana regen			: 0.9
+Base attack damage		: 28-32
+Base attack time		: 1.2
+Base armor				: 2
+Base magic resistance	: 25%
+Base movement speed		: 300
+Base turn rate			: 0.8
+Day/night vision		: 1800/800
+
+Attack animation		: 0.12 + 0.1
+Attack type				: Melee
+Attack range			: 150
+Projectile speed		: Instant
+
+Hero collision size		: 24
+
+Number of legs			: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 12 + 1.6
+*AGI	: 26 + 3.8
+ INT	: 15 + 1.7
+
+(Possible list of abilities)
+Abilities:
+
+--------------------------------------------------------------------------------
+Name: Chaotic Omnipresence	| Cast type: No target, Channeled
+{
+Description:
+Channels for 3 seconds, after which starts teleporting to and attacking(non-neutral) enemy units at random.
+All enemies that are attackable are valid targets. If there are no valid targets, the ability ends
+prematurely. Getting stunned during the attacks will cancel the ability. No vision is needed over
+the targets unless they are invisible. If the channeling fails, the caster is stunned based on the
+duration channeled. Ignores units in the fountain and the courier. Will target chasms.
+
+Attacks per second: 8/9/10
+Attack count: 24/32/40							Manacost: 200/250/300
+Max attacks per unit: 6/8/10					Cooldown: 240/200/160
+
+TALENTS:
+- Unlimited attacks per unit
+- 40 sec cooldown reduction
+}
+--------------------------------------------------------------------------------
+Name: Shatter	| Ability type: Passive
+
+Description:
+On each basic attack recieved, there is a chance to shatter into two,
+creating an illusion who also has the ability to shatter. Upon
+triggering, applies a basic dispel.
+
+Hero chance to split: 10%/15%/20%/25%
+Illusion chance to split: 4%/7%/10%/13%
+Illusion damage dealt: 50%/65%/80%/95%
+Illusion damage received: 450%
+Illusion duration: 8/10/12/14
+
+TALENTS:
+- -150% Illusion damage received
+--------------------------------------------------------------------------------
+Name: Shocking teleportation	| Ability type: Point target
+
+Description:
+After a 1.3 second cast time, instantly appears at the targeted location,
+however, for each 85/90/95/100 units traveled by the ability, the caster is stunned
+for 0.085 seconds. Can be cast globally. If cast more than 3000 units far,
+the caster's targeted location is revealed in a 250 radius to the enemy
+team. Plays a louder sound effect on long distance teleports.
+
+Max self stun: 12/9/6/3 seconds		Manacost: 150/175/200/250
+																Cooldown: (10+(Distance travelled/75)
+																
+TALENTS:
+- Turns ethereal instead of getting stunned.
+--------------------------------------------------------------------------------
+Name: Anomaly	| Ability type: Passive	| Pierces spell immunity
+
+Description:
+Causes random cracks to appear in the map periodically. These chasms
+are visible to the ability owner's team only. If attacked, the chasm explodes,
+damaging enemies in a line depending on the chasm's rotation and also
+stuns enemies standing on the chasm and slows enemies damaged.
+Cannot spawn within 1000 range of an existing chasm. The damage
+it deals is the same as it received and is converted to magical form.
+
+Spawn rate: 1 per 15/12/9/6 seconds
+Lifespan: 60
+Length: 600 to 900/1200/1500/1800
+Width: 100/115/130/145
+Stun duration: 1
+Slow: Max: 100% Min: 1%
+Slow duration: 1.5
+
+
+Hero lore:
+
+
+Hero role:
+Powerful semi-carry meant to cause chaos among the enemies to disrupt their planning.
+
+(for 3D modelling purposes)
+Hero theme: Crystalline form, blueish, glowing bits, very still, bladesman,
+serious face.

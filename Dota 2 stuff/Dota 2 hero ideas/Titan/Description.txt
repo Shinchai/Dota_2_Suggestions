@@ -1,0 +1,62 @@
+Hero name				: 
+
+Base health regen		: 5
+Base mana regen			: 2.5
+Base attack damage		: 230
+Base attack time		: 4
+Base armor				: 15
+Base magic resistance	: 35%
+Base movement speed		: 100
+Base turn rate			: 0.2
+Day/night vision		: 2500/1200
+
+Attack animation		: 1.1 + 0.6
+Attack type				: Melee
+Attack range			: 300
+Projectile speed		: Instant
+
+Hero collision size		: 48
+
+Number of legs			: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+*STR	: 30 + 10
+ AGI		: 0 + 0
+ INT		: 18 + 2.2
+
+(Possible list of abilities)
+Abilities:
+
+--------------------------------------------------------------------------------
+Name: Overweight	|	Ability Type: Hidden, Passive
+
+Description: The hero is immune to haste effects and has 50% status 
+resistance.
+--------------------------------------------------------------------------------
+Name: Ground Slam	| Ability Type: Point Target	| Damage Type: Magical	| Does not pierce spell immunity
+
+Description:
+Slams the ground in front of the caster, dealing base damage plus 
+attribute based damage. Stuns and slows affected units. The stun 
+duration is based on unit distance from the center of the cast point.
+
+Effect Radius: 450/500/550
+Base damage: 150/225/300
+Bonus damage per 1 STR: 1.5/2/2.5
+Stun Radius: 450
+Max Stun: 2/2.5/3/
+Min Stun: 0.6
+Slow: 20%/27%/35%								Manacost: 150/200/250
+Slow duration: 2/2.5/3							Cooldown: 24/20/16
+--------------------------------------------------------------------------------
+
+
+Hero lore:
+
+
+Hero role:
+
+
+(for 3D modelling purposes)
+Hero theme: 

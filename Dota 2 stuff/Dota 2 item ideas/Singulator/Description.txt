@@ -1,0 +1,26 @@
+Name: Singulator
+
+Requirements:
+
+	Magic Staff(1000)
+	Shadow Amulet(1300)
+	Perserverance(1700)
+	
+Total cost: 4000 gold
+	
+Abilities:
+
+	Active: Seclusion
+	Turns an enemy completely invisible to his allies for 4 seconds.
+	If the enemy dies while under this effect, its killer will become invisible
+	for 6 seconds with 15% bonus movespeed.
+	Allies lose complete track of the affected unit(no vision, map marker, etc)
+	
+	Cooldown: 28 seconds
+	Manacost: 140
+	
+
+	+10 Intelligence.
+	+20 Attack Speed.
+	+6 HP Regen.
+	+1.25 Mana Regen.

@@ -1,0 +1,130 @@
+Hero name					: Librarian
+
+Base health regen			: 1.5
+Base mana regen			: 0.9
+Base attack damage		: 25
+Base attack time			: 1.5
+Base armor					: 1.5
+Base magic resistance	: 30%
+Base movement speed	: 280
+Base turn rate				: 0.3
+Day/night vision				: 1000/1800
+
+Attack animation			: 0.35+0.36
+Attack type					: Melee
+Attack range					: 175
+Projectile speed				: Instant
+
+Hero collision size			: 24
+
+Number of legs				: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 20 + 2
+ AGI	: 24 + 2
+*INT	: 19 + 3.6
+
+TALENTS:
+- 50% manacost reduction on all spells & 20% cooldown reduction
+- 
+
+(Possible list of abilities)
+Abilities:
+---------------------------------------------
+Name:Switch stance	| Cast type: No target
+{
+Description:
+Cycles between 3 stances.
+First stance gives cleave damage but reduces damage dealt and attack range.
+Second stance gives no special bonuses.
+Third stance gives increased attack range and armor corruption but slower BAT.
+
+1st stance cleave: 20%/25%/30%/35%
+1st stance damage reduction: 30%/25%/20%/15%
+1st stance attack range reduction: 50
+3rd stance range increase: 300
+3rd stance armor reduction: 2/3/4/5
+3rd stance base attack time: 2.4
+}
+-----------------------------------------------
+Name: Prey				| Cast type: No target
+{
+Description:
+Dispels the caster and sends them up into the sky, becoming untargetable. The player's field of view expands
+greatly and slowly returns to normal as the hero falls. The hero gains unobstructed vision and movement. 
+Upon landing, after 0.55 second delay, creates 3 waves of rising columns which damage
+any unit it collides with, a unit can be damage by any number of columns but if a column collides with more than one
+unit, the damage is split amongst them. The damage is based on the caster's maximum mana. Targets under the caster
+upon landing are stunned. Destroys trees in the radius. A slowing effect is (re)applied on getting hit by the waves.
+The caster is disabled for 1.6 seconds upon landing.
+
+Dispel type: Strong dispel
+Air time: 1.4 + 3.6 seconds
+Column rings: 5
+Column segments: 4+6+8+10+12(inner to outer ring)
+Radius: 750
+Damage per column: 20% of max mana
+Wave interval: 0.6 seconds
+Slow: 75%															Manacost: 225/400/550
+Stun/Slow duration: 1.5 seconds								Cooldown: 140/120/100
+}
+
+TALENTS:
+- Haste effect while in air
+- 35% of max mana as damage
+--------------------------------------------------
+Name: Release spear	| Cast type: No target
+{
+Description:
+Throws down the hero's spear, turning it into a controllable entity. The spear has a dash ability which damages
+units it collides with. Upon cast, the hero's stance is set to default and all bonus damage is lost until picked again. Allied heroes
+can ride the spear by getting within melee range of it and right-clicking on it. The spear can be destroyed by
+enemies, doing so gives the ability twice the cooldown. The cooldown is applied on returning to the caster or
+getting destroyed. The spear can be slowed but not stunned and is immune to magical damage. Allies are disarmed
+when attached to the spear.
+
+Spear XP & bounty: 75/100/150/200 & 50/60/120/150
+Spear speed: 400/450/500/550
+Spear health: 450/700/950/1200								Manacost: 125
+Spear armor: 6/9/12/15											Cooldown: 30
+
+Dash damage: 120/180/240/300 as Physical
+Dash length: 350/400/450/500
+Dash speed: 1000													Cooldown: 18
+
+TALENTS:
+- + 100 spear speed
+- 12 sec cooldown reduction for dash
+}
+----------------------------------------------------
+Name: Barrier			| Cast type: Point target
+{
+Description:
+Creates a Barrier which blocks enemy movement and ability projectiles. The barrier is spawned with the side facing
+the caster, if self cast, it will spawn in front of and will face the caster. The barrier will only block one
+projectile. While active, the ability will be replaced by a "Push barrier" ability which will kick the barrier
+towards a direction with max range. Enemies hit by the barrier are knocked back and stunned; the barrier itself
+will start fading and slowing once it collides with an enemy. The knockback lasts until the barrier fades.
+
+Cast range: 1200
+Barrier duration: 4/5/6/7
+Barrier health: 250/550/850/1150
+Barrier width: 350/400/450/500
+Barrier kick speed: 500
+Barrier fade time: 1.2 seconds
+Barrier slow rate after 1st collision: 100
+Barrier max kick range: 800/900/1000/1100			Manacost: 90/100/110/120
+Barrier stun duration: 0.7/0.8/0.9/1							Cooldown: 27/21/15/9
+
+TALENTS:
+- Barrier blocks all projectiles while it lasts
+}
+----------------------------------------------------
+
+
+Hero lore:
+
+
+(for 3D modelling purposes)
+Hero theme: Owl, Anthromorph,Guardian, Giant, Winged, Heavily armored with holographic pieces.

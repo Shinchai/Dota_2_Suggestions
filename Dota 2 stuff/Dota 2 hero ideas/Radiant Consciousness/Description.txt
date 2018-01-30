@@ -1,0 +1,167 @@
+Hero name		: Radinthul
+
+Base health regen	: 1.5
+Base mana regen		: 2
+Base attack damage	: 22 - 26
+Base attack time	: 2.2
+Base armor		: 0
+Base magic resistance	: 35%
+Base movement speed	: 300
+Base turn rate		: 0.4
+Day/night vision	: 1800/1000
+
+Attack animation	: 0.44+0.11
+Attack type		: Ranged
+Attack range		: 700
+Projectile speed	: 900
+
+Hero collision size	: 36
+
+Number of legs		: 0
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR		: 27 + 2.9
+ AGI		: 15 + 2.1
+*INT		: 33 + 3.1
+
+{TALENTS}
+- LVL 10: +4 Armor Aura (700 Radius)
+- LVL 10: +90 GPM
+- LVL 15: +35 INT
+- LVL 20: +200 Attack Ranged
+- LVL 20: +25% Manaloss reduction
+
+(Possible list of abilities)
+Abilities:
+------------------------------------------------------
+Name: Rally	| Ability Type: No Target
+
+Description:
+Turns any type of Radiant creeps, whether allied or enemy, to the
+caster's team. These creeps are then strengthened based on the
+caster's attributes. The creeps last forever or until killed. Ranged 
+creeps also gain a new ability on level 2 and 4. Can't have more
+controlled creeps than the maximum number of creeps that will 
+spawn per wave.
+
+Number of creeps controlled: 20%/40%/60%/80% of max creep spawn count.
+Creep HP boost: 15%/20%/25%/30% of caster's HP from STR.
+Creep Armor boost: 10%/12%/14%/16% of caster's Armor from AGI.
+Ranged Creep Mana boost: 8%/12%/16%/20% of caster's MP from INT.
+
+														Manacost: 100/130/160/190
+														Cooldown: 30
+
+Level 2 Ranged Creep ability: Type: Auto-cast
+Shoots an Empowered attack that also drains mana and shares it 
+among allied units around the target.
+
+Bonus damage: 30/50/70
+Mana burn: 60/105/150
+Mana burn as damage: 35%
+Multi targets: 0/1/2						Cooldown: 19/16/13
+
+Level 4 Ranged Creep ability: Type: Toggle
+Heals surrounding allied Radiant lane creeps but damages Dire 
+creeps regardless of team. Also heals/damages passively.
+
+Active/Passive Heal per sec: 12
+Active/Passive damage per sec: 18
+
+															Manacost: 20 per sec
+{TALENTS}
+- LVL 25: No limit on max creep controlled.															
+															
+----------------------------------------------------------------------
+Name: Fountain of Life	| Ability Type: No Target, Channeled
+
+Description:
+Creates a healing fountain where the caster is standing.
+The fountain lasts as long as the caster is channeling.
+
+Radius: 600
+Fountain HP regen: 2%/3%/4%/5% of max HP.
+Fountain MP regen: 2%/3%/4%/5% per sec
+Fountain channel duration: 16							Manacost: 75/150/225/300
+																		Cooldown: 68/64/60/56
+
+[SCEPTER BONUS]
+Fountain lasts for half value but no longer requires channeling, instead
+ability has a cast time of 0.9.
+
+{TALENTS}
+- LVL 15: +2% HP/MP regen																		
+----------------------------------------------------------------------
+Name: Channel Power	| Ability Type: Passive, Toggled
+
+Description:
+Passively, grants bonus HP & MP regen and armor to the spell 
+owner while near a tower. Actively, grants healing and armor to 
+nearby structures. The healing received falls off linearly the 
+farther the spell owner is from a tower and the healing given is 
+shared among all structures within radius of the spell owner.
+While the spell owner is healed, the tower giving the bonuses 
+loses 1 HP per second. The caster's bonuses are lost if the ability 
+is on. The health and armor given by the caster is also drained 
+from the caster. The regen is not amplified by caster's attributes.
+
+Radius: 700
+Caster HP regen: 9/15/21/27 [30]
+Caster MP regen: 4/8/12/16 [20]
+Caster Armor: 2/4/6/12 [15]
+Active: Heal: 1/2/4/8 [10]
+Active: Armor bonus: 50% [80%] of caster's armor
+
+[SCEPTER BONUS]
+Increases spell potency
+
+AND
+
+Causes enemy structures to weaken near the spell owner.
+Actively, causes health decay for the caster and nearby towers.
+
+Damage reduction: 15/20/25/30
+Attack speed reduction: 15/20/25/30
+Armor reduction: 3/4/5/6
+Active: Health decay: 0.5%/0.8%/1.1%/1.4%
+
+----------------------------------------------------------------------
+Name: Assimilate		| Ability Type: No Target	| Pierces spell immunity
+
+Description:
+Converts nearby opposing team's terrain to become similar to 
+Dire's. Passively, causes all Dire terrain to give its heroes bonuses.
+Can't convert terrain that is too far from a Dire terrain.
+
+Conversion radius: 450/750/1050
+Conversion duration: 10 seconds
+
+Passive: While in dire terrain.
+Bonus HP regen: 3/5/7
+Bonus MP regen: 1.5/2.5/3.5
+Bonus Armor: 5/7/9
+Bonus Magic Resistance: 5%/10%/15%
+Bonus Attack damage: 15/35/55
+Bonus Spell Amp: 6%/9%/12%
+Bonus Attack Speed: 20/35/50
+Bonus Move Speed: 4%/6%/8%
+
+Passive: Upon standing still for 7/5/3 seconds.
+- Invisibility so long as no enemy is within 900/700/500/300 units.
+- 2x HP and MP regen.
+
+															Cooldown: 180
+
+{TALENTS}
+- LVL 25: +700 Assimilate radius
+----------------------------------------------------------------------
+
+Hero lore:
+
+Hero role:
+
+
+(for 3D modelling purposes)
+Hero theme: Radiant themed, body consists of a combination of 
+Radiant structure and creep design.

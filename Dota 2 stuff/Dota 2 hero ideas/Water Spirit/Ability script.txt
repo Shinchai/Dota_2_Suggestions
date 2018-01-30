@@ -1,0 +1,37 @@
+"heroname_ability_name"
+{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"0"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NONE"
+		"OnCastbar"						"1"
+		"OnLearnbar"					"1"
+		"FightRecapLevel"				"0"
+	
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastRangeBuffer"		"250"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		"AbilityChannelTime"			"0.0 0.0 0.0 0.0"
+		"AbilityCooldown"				"0.0 0.0 0.0 0.0"
+		"AbilityDuration"				"0.0 0.0 0.0 0.0"
+		"AbilitySharedCooldown"			""
+		"AbilityDamage"					"0 0 0 0"
+		"AbilityManaCost"				"0 0 0 0"
+		"AbilityModifierSupportValue"	"1.0"	// for stats tracking.
+		"AbilityModifierSupportBonus"	"0"		// for stats tracking.
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				
+			}
+			
+		}
+	}
+	

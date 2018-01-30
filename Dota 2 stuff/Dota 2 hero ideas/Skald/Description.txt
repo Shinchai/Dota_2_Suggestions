@@ -1,0 +1,113 @@
+Hero name					: War Bard
+
+Base health regen			: 1.5
+Base mana regen			: 0.9
+Base attack damage		: 33-40
+Base attack time			: 1.7
+Base armor					: 3.5
+Base magic resistance	: 25%
+Base movement speed	: 305
+Base turn rate				: 0.7
+Day/night vision				: 1800/800
+
+Attack animation			: 0.56 + 0.54
+Attack type					: Melee
+Attack range					: 150
+Projectile speed				: Instant
+
+Hero collision size			: 24
+
+Number of legs				: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+*STR	: 18 + 3.8
+ AGI		: 15 + 2.5
+ INT		: 18 + 1.4
+
+(Possible list of abilities)
+Abilities:
+--------------------------------------------------------------------------------
+Name: Switch Stance	| Ability type: No Target	| Pierces Spell immunity
+
+Description:
+Creates an aura around the spell owner, casting the spell will change
+the effects. 
+
+Resistance Aura:
+Bonus armor: 1/2/3/4
+Bonus magic resistance: 4%/6%/8%/10%
+Bonus status resistance: 4%/6%/8%/10%
+
+Combat Aura:
+Bonus attack damage: 10/15/20/25 (0.5x effect for ranged units) (Non int heroes only)
+Bonus attack speed: 10/15/20/25
+
+Bonus attack range: 50/75/100/125 (ranged only)
+
+Bonus spell amp: 4%/6%/8%/10% (Int heroes only)
+Bonus cast range: 75/100/125/150 (Int heroes only)
+
+Movement Aura:
+Bonus move speed: 5%/6%/7%/8%
+Bonus Turn speed: 25%/35%/45%/55%
+--------------------------------------------------------------------------------
+Name: Aura stack	| Ability Type: No target	| Pierces Spell immunity
+
+Description:
+Doubles the effects of "Switch Stance"'s aura and locks switching
+stances until the effect ends.
+
+Duration: 4/5/6/7 seconds
+
+																Manacost: 45/65/85/95
+																Cooldown: 11/10/9/8
+--------------------------------------------------------------------------------
+Name: Enhance Aura	|	Ability Type: No target	| Pierces Spell immunity
+
+Description:
+Causes an active effect based on "Switch stance"'s aura.
+
+Resistance Aura Enhancement:
+Creates a secondary large aura, all spells cast on allied heroes of this spell's
+owner are instead cast on this spell's owner if the ally was affected by the 
+aura. Lasts 3/4/5 seconds.
+
+Combat Aura Enhancement:
+Causes melee units to cleave for 40% damage and causes ranged units'
+attacks to bounce to enemies within 450 range of each other, the damage
+decays by 15% per bounce and bounces 1/2/3 times.
+
+Movement Aura:
+Creates an illusion of all nearby allied heroes. The illusions deal 
+0%/15%/30%  of their original copy and take 300%/250/200% 
+damage. They last for 15 seconds.
+																Manacost: 100/150/200
+																Cooldown: 60
+--------------------------------------------------------------------------------
+Name: War banner		| Ability Type: Point Target	|	Pierces Spell immunity
+
+Description:
+Places a war banner at the targeted point. The banner has a 500 range
+aura based on the caster's active aura upon deploying the banner.
+The banner's aura effects are halved. Multiple banners stack their effects.
+Banners can not be withing 300 range of each other.
+
+Base banner efficiency: 50%
+Bonus efficiency per extra banner: 10%/11%/12%/13%
+Duration: 15/20/25/30
+																Manacost: 50
+																Cooldown: 5
+--------------------------------------------------------------------------------
+
+
+
+Hero lore:
+
+
+Hero role:
+
+
+
+(for 3D modelling purposes)
+Hero theme: 

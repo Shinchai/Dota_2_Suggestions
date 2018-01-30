@@ -1,0 +1,169 @@
+Hero name		: 
+
+Base health regen	: 1.5
+Base mana regen		: 0.9
+Base attack damage	: 30
+Base attack time	: 1.6
+Base armor		: 1
+Base magic resistance	: 25%
+Base movement speed	: 285
+Base turn rate		: 0.5
+Day/night vision	: 1600/1200
+
+Attack animation	: 0.36+0.84
+Attack type		: Ranged
+Attack range		: 485
+Projectile speed	: 2000
+
+Hero collision size	: 24
+
+Number of legs		: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 13+1.8
+ AGI	: 18+2.3
+ INT	: 18+2.9
+
+(Possible list of abilities)
+Abilities:
+
+Name: Trap field 				| Ability type: No target 	| Does not pierce spell immunity.
+{
+Description:
+Turns the hero hidden and sets his speed to 600 with 0.2 turn rate. Spawns traps behind  
+him every 75 units and creates a seperate branching trap trail every 375 units. The trap 
+types vary depending on the level of the skill. Previous level trap types are not lost   
+on the advanced levels. The number of traps depends on the level of the ability. Ability 
+is active for a few seconds or until all traps are deployed.	Traps are targetable  
+but have no collision, they do not destroy trees around them. Traps are invisible 
+All traps have a trigger radius of 100.
+
+Level 1
+- 200 radius AoE slow 25%/40%/55%. 67%/50%/35% spawn chance.	
+- 350 radius AoE [burst/DoT] [magical/physical] damage 150/200/250. 33%/28%/25% spawn chance.
+Level 2:
+- single target disarm effect 3/4 seconds 11%/10% spawn chance.	
+- 100 radius AoE fear effect 2/2.5 seconds. 11%/10% spawn chance.	 
+Level 3:
+- Single target root effect 2.5 seconds. 10% spawn chance.	
+- 150 radius 30% damage amp effect 7 seconds. 10% spawn chance.	
+
+Traps spawned: 22/39/60
+Trap duration: 6/12/24
+Ability duration: 5/7/9				Manacost: 125/175/250
+Branch traps: 3/4/5					Cooldown: 105/87/69 seconds
+
+Potential talents:
+Traps spawned: +60 & Trap duration: + 24 & Ability duration: +9
+}
+-------------------------------------------------------------------------------------------------
+
+Name: Creep 					| Ability type: Toggle 
+{
+Description:
+Turns the hero invisible and reduces his speed. While invisible, the hero is phased and
+immune to other slowing effects. While standing still, grants health regeneration and
+short range true sight against heroes only. Replaces the ability with "Conclude creep"
+which ends the invisibility if cast on the ground, casts a channeled stun if cast on
+an enemy or dispells all enemies in an AoE if self-cast. The cooldown begins
+once the ability is turned off. Casting "Magic trap" will not reveal the caster.
+
+Fade duration: 1.5/0.75/0.375/0.1875								
+Self-slow: 30%/25%/20%/15%									
+Health regen: 1%/1.5%/2%/2.5%									
+Manacost per second: 6/9/12/15				Manacost:25				
+Truesight radius: 250/300/350/400			Cooldown:8/7/6/5			
+strangle duration: 2.5/3/3.5/4									
+Dispel radius: 350										
+Dispel type: Basic Dispel
+
+Potential talents:
+Creep strangle damage over time: +250.
+Creep movement speed penalty negation and bonus addition: +15%
+Creep cool down removal and manacost reduction by 10
+}							
+-------------------------------------------------------------------------------------------------
+
+Name:Magnetize 			| Ability type: Unity target 	| Pierces spell immunity.
+ Sub-ability
+{
+Description:
+Magnetizes a non-building target unit, causing traps near it to follow it. If the target is an ally, the traps will
+follow it faster the more it is surrounded by enemy heroes. The traps are revealed when moving.
+Only one unit can be magnetized, the previous magnetize debuff will be lost. Casting on the same unit
+will remove the debuff. Can be self cast. Lasts forever. Will follow magnetized invisible units
+and can trigger on them if they are magnetized.
+
+Enemy trap follow radius: 450/500/550/600
+Ally trap follow radius: 800
+Trap move speed: 100/125/150/175				Manacost: 25
+Trap speed bonus per enemy: 30				Cooldown: 1
+
+Potential talents:
+Trap move speed: + 125
+Trap invisible while moving.
+}
+-------------------------------------------------------------------------------------------------
+
+Name:Swap trap			| Ability type: No target
+{
+Description:
+Swaps from an arsenal of traps. Gains new traps at different levels. Traps do not trigger on invisible heroes.
+Traps have a collision radius of 16 but can only collide with each other.
+
+Level 1:
+Damage Trap: Damage: 225/300/375/450
+Slow Trap: Slow: 20%/30%/40%/50%
+
+Level 2:
+Root Trap: Root: 1.75/2/2.25
+Vision Trap: Unobstructed vision on explosion: 475/625/775
+
+Level 3:
+Damage Trap: Mana Burn: 150/250 half dealt as physical damage.
+Slow Trap: Blind: 45%/65%
+
+Level 4:
+Damage Trap: Deals physical or magical damage, based on lowest resistance.
+Slow Trap: Radius increase: 250
+Root Trap: Damage over Time: 125
+Vision Trap: Triggers on invisible heroes but doesn't reveal
+
+Potential talents:
+Damage trap damage: + 200
+Root trap root duration: + 0.75
+}
+---------------------------------------------------------------------------------------------------
+
+Name: Throw trap	| Ability type: Target ground	| Does not pierce spell immunity.
+{
+Description:
+Throws a chosen trap at the targeted point. Trap trigger radius is 100 units. Triggers after 0.3 
+second delay. Does not trigger on invisible units. Traps will only trigger once landed but have no
+activation time.
+
+Trap AoE: 150/200/250/300
+Trap duration: 30/45/60/75
+Cast range: 700/900/1100/1300				Manacost: 40/65/90/115
+Projectile speed: 600								Cooldown: 9/8/7/6
+}
+
+Hero lore :Race: Human :Age: 18-22 :Gender: Male
+
+A wizard prodigy who found out that the plans his masters had for him
+would be boring and laborous. Appalled by the thought of wasting his
+genius, the prodigy set out to study the art of war and learnt of the most
+valuable form of combat that is trapping. The wizard learnt to create large
+mounds of traps within short times and to scatter them throughtout a 
+large field in order to create a favourable battlefield for his allies.
+
+Hero role:
+Designed to make roaming a challenge for the enemies and to find
+astray enemies to gank. This hero excels at placing cheap cost traps
+that hinder enemy forces decently. His ultimate allows him to spam
+his traps to create a more favorable battlefield for his allies.
+
+
+(for 3D modelling purposes)
+Hero theme: Wizard type, wears ghillie like suit with glowing seals instead of leaves, cloaked.

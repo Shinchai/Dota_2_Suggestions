@@ -1,0 +1,104 @@
+Hero name				: Astral Warden
+
+Base health regen		: 1.5
+Base mana regen			: 0.9
+Base attack damage		: 19-33
+Base attack time		: 1.7
+Base armor				: 2
+Base magic resistance	: 25%
+Base movement speed		: 300
+Base turn rate			: 0.6
+Day/night vision		: 1800/1800
+
+Attack animation		: 0.5 + 0.18
+Attack type				: Ranged
+Attack range			: 325
+Projectile speed		: 2500
+
+Hero collision size		: 18
+
+Number of legs			: 0
+
+* = Primary attribute.
+Starting attributes + gain per level:
+ STR	: 12 + 1.4
+ AGI	: 17 + 1.7
+*INT	: 33 + 4.7
+
+(Possible list of abilities)
+Abilities:
+------------------------------------------------------
+Name: Focus beam		| Cast type: Toggle	| Pierces spell immunity
+{
+Description:
+Attacks a target rapidly with pure damage based on right-click damage. The beam weakens the longer
+it is and breaks past max range. Damage reduction starts once 67% of max range is exceeded. 
+Can still use basic attacks while active. If vision of the target is lost, the ability is toggled
+off.
+
+Mana per second: 10/15/20/25
+Damage per second: 20%/30%/40%/50% of basic attack
+Range: 450/575/700/825								Manacost: 10/20/30/40
+Damage reduction at max range: 50%					Cooldown: 1
+}
+------------------------------------------------------
+Name: Supervision		| Cast type: No target
+{
+Description:
+Loses default vision but gains unobstructed vision in a cone in front of the caster. Can't move
+while active. Turn rate is slowed by 95% while active.
+
+Vision range: 800/1200/1600/2000
+Cone angle: 40/45/50/55 degrees		Manacost: 0
+Duration: 5							Cooldown: 100/90/75/65
+}
+-------------------------------------------------------
+Name: Solar Flare		| Cast type: Ground targeted	| Damage type: Magical	| 
+Does not pierce spell immunity
+{
+Description:
+Concentrates a DPS effect in an expanding area, the damage reduces as the AoE expands. 
+Grants vision and true sight to both teams in the AoE. The AoE appears 3 seconds after cast and the 
+effect is visible globally once it appears. The damage decays for the first 4 ticks to 800/400/200
+/100. Ticks once per second. At max level, deals 5100 damage at the bullseye.
+
+Cast range: 3000/4000/5000
+Initial radius: 12
+Expansion speed: 73
+Max radius: 800
+Initial tick damage: 2000/2500/3000
+Minimum damage: 100						Manacost: 300/400/500
+Duration: 11							Cooldown: 200/160/140
+}
+----------------------------------------------------------
+Name: Ancient Knowledge	| Cast type: Passive
+{
+Description:
+Allied heroes near the hero slowly gain intelligence until they match the hero's own intelligence. 
+The buff decays once allies leave the AoE. Allies also gain perks from non-primary attributes while
+under the aura's effect.
+
+Area of Effect: 900
+Int per second: 0.5/0.75/1/1.25
+Buff decay delay: 2
+Decay rate: 1
+}
+----------------------------------------------------------
+
+Hero lore :Race: N/A :Age: 100000+ :Height: 221cm
+
+A powerful being tasked with preventing certain inhabited planets from being
+damaged by celestial rocks. The astral warden was distracted from
+preventing the mad moon from scattering all over the mundane world
+and as a protocol, was retasked to prevent the manipulative fragments
+from dooming the planet.
+
+
+Hero role:
+Ward on steroids and wheels. Can nuke enemies from orbit. The bane of Roshan lovers and any hero
+that hates fighting on set up battlefields and as a bonus, boosts allied intelligence and grants
+them the other 2 perks. Has an alternate means of attacking which ignores blindness,evasion,
+armor and magic resistance.
+
+(for 3D modelling purposes)
+Hero theme: Floating, Enigmatic, Celestial appearance.

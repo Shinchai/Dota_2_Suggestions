@@ -1,0 +1,142 @@
+Hero name		: Dirulith
+
+Base health regen	: 4
+Base mana regen		: 0.9
+Base attack damage	: 28 - 36
+Base attack time	: 1.5
+Base armor		: 6
+Base magic resistance	: 25%
+Base movement speed	: 315
+Base turn rate		: 0.6
+Day/night vision	: 1000/1800
+
+Attack animation	: 0.27+0.31
+Attack type		: Melee
+Attack range		: 200
+Projectile speed	: Instant
+
+Hero collision size	: 36
+
+Number of legs		: 2
+
+* = Primary attribute.
+Starting attributes + gain per level:
+*STR	: 34 + 2.7
+ AGI		: 9 + 2.9
+ INT		: 17 + 2.5
+
+ {TALENTS}
+- LVL 10: -4 Armor reduction Aura (750 Radius)
+- LVL 10: +45 Damage
+- LVL 15: +12 All Stats
+- LVL 20: +50 Attack Speed
+ 
+(Possible list of abilities)
+Abilities:
+------------------------------------------------------
+Name: Rally	| Ability Type: No Target
+
+Description:
+Turns any type of Dire creeps, whether allied or enemy, to the
+caster's team. These creeps are then strengthened based on the
+caster's attributes. The creeps last forever or until killed. Ranged 
+creeps also gain a new ability on level 2 and 4. Can't have more
+controlled creeps than the maximum number of creeps that will 
+spawn per wave.
+
+Number of creeps controlled: 20%/40%/60%/80% of max creep spawn count.
+Creep HP boost: 15%/20%/25%/30% of caster's HP from STR.
+Creep Armor boost: 10%/12%/14%/16% of caster's Armor from AGI.
+Ranged Creep Mana boost: 8%/12%/16%/20% of caster's MP from INT.
+
+														Manacost: 100/130/160/190
+														Cooldown: 30
+
+Level 2 Ranged Creep ability: Type: Auto-cast
+Shoots an Empowered attack that costs 20% of maximum mana.
+
+Bonus damage: 80/140/200
+Bonus shot per strike: 0/0/1						Cooldown: 19/16/13
+
+Level 4 Ranged Creep ability: Type: Toggle
+Heals surrounding allied Dire lane creeps but damages Radiant 
+creeps regardless of team. Also heals/damages passively.
+
+Active/Passive Heal per sec: 9
+Active/Passive damage per sec: 24
+
+															Manacost: 20 per sec 
+{TALENTS}
+- LVL 20: 1.5x Max controlled creep limit.
+- LVL 25: No Level 2 Ranged Creep ability cooldown.																
+----------------------------------------------------------------------
+Name: Fountain of Life	| Ability Type: No Target, Channeled
+
+Description:
+Creates a healing fountain where the caster is standing.
+The fountain lasts as long as the caster is channeling.
+
+Radius: 450
+Fountain HP regen: 2%/3%/4%/5% of max HP.
+Fountain MP regen: 2%/3%/4%/5% per sec
+Fountain channel duration: 16							Manacost: 75/150/225/300
+																		Cooldown: 68/64/60/56
+{TALENTS}
+- LVL 15: -2.5% HP/MP degen on enemies																		
+----------------------------------------------------------------------
+Name: Channel Power	| Ability Type: Passive, Toggled
+
+Description:
+Passively, grants bonus HP & MP regen and armor to the spell 
+owner while near a tower. Actively, grants healing and armor to 
+nearby structures. The healing received falls off linearly the 
+farther the spell owner is from a tower and the healing given is 
+shared among all structures within radius of the spell owner.
+While the spell owner is healed, the tower giving the bonuses 
+loses 1 HP per second. The caster's bonuses are lost if the ability 
+is on. The health and armor given by the caster is also drained 
+from the caster.
+
+Caster HP regen: 9/15/21/27
+Caster MP regen: 4/8/12/16
+Caster Armor: 2/4/6/12
+Active: Heal: 1/2/4/8
+Active: Armor bonus: 50% of caster's armor
+----------------------------------------------------------------------
+Name: Assimilate		| Ability Type: No Target	| Pierces spell immunity
+
+Description:
+Converts nearby opposing team's terrain to become similar to 
+Dire's. Passively, causes all Dire terrain to give its heroes bonuses.
+Can't convert terrain that is too far from a Dire terrain.
+
+Conversion radius: 450/750/1050
+Conversion duration: 10 seconds
+
+Passive: While in dire terrain.
+Bonus HP regen: 3/5/7
+Bonus MP regen: 1.5/2.5/3.5
+Bonus Armor: 5/7/9
+Bonus Magic Resistance: 5%/10%/15%
+Bonus Attack damage: 15/35/55
+Bonus Spell Amp: 6%/9%/12%
+Bonus Attack Speed: 20/35/50
+Bonus Move Speed: 4%/6%/8%
+
+Passive: Upon standing still for 5/4/3 seconds.
+- Invisibility so long as no enemy is within 900/700/500/300 units.
+- 2x HP and MP regen.
+
+															Cooldown: 180
+{TALENTS}
+- LVL 25: -50 Second cooldown reduction
+----------------------------------------------------------------------
+
+Hero lore:
+
+Hero role:
+
+
+(for 3D modelling purposes)
+Hero theme: Dire themed, body consists of a combination of Dire 
+structure and creep design.

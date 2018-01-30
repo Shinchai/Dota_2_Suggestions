@@ -1,0 +1,20 @@
+Name: Twin Swords
+
+Requirements:
+	Broadsword(1200) x2
+	Recipe(350)
+
+Total cost: 2750
+	
+Abilities:
+
+	Passive: Flurry
+		Gain attack speed buff with 5 stacks. While stacks are available,
+		gain +50 attack speed. 1 stack is lost per hit attack, all stacks are
+		lost upon a missed attack. Gain 1 stack every 2.5 seconds.
+		
+		Multiple instance of this passive do not stack.
+	
+	
+	+36 Damage.
+	
