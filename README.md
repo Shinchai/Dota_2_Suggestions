@@ -33,7 +33,9 @@ Existing suggestions that are excluded from this list is due to their high imbal
 List of item suggestions.
 
 1- Spiked Shield.
+
 2- Dual Swords.
+
 3- Singulator.
 
 Also, Echo Sabre and Rod of Atos modifications.
