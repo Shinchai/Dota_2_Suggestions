@@ -33,9 +33,8 @@ Name: Shadow Orb	| Ability type: Point Target	| Damage Type: Magical	| Does not 
 Description:
 Launches a ball of dark energy. The projectiles passes through units
 and terrain until it reaches max range. Deals Damage every tick to
-any unit it is colliding with. Will deal approximately, two ticks of damage
-to a stationary target and 1 to a target moving towards the projectile.
-The orb does not lock onto targets.
+any unit it is colliding with. The orb does not lock onto targets.
+Orb size is 8 units.
 
 Projectile Range: 1100/1400/1700/2000
 Projectile Speed: 1000
@@ -54,7 +53,7 @@ Name: Apocalypse		| Ability Type: No Target		| Damage Type: Magical	| Does not p
 Description:
 Creates a damaging effect in a radius around the caster. The radius and
 damage depend on the amount of mana past max mana the caster has.
-The abilty has a cast time of 0.59 seconds. If the caster has more than
+The abilty has a cast time of 0.59 seconds(arbitrary number). If the caster has more than
 1000 overmana, he will take damage from this ability after a 2 second
 delay. The self-damage is dealt over 6 seconds.
 
@@ -80,4 +79,4 @@ Hero role:
 
 
 (for 3D modelling purposes)
-Hero theme: Clad in heavy dark grey armor with dark runic effects.
+Hero theme: Clad in heavy dark grey armor with dark purple holographic runes.
