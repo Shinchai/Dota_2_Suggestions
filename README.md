@@ -1,7 +1,9 @@
 # Heroes
 List of heroes I make for IceFrog to see(hopefully).
 
-#NOTE: The hero scripts and whatnot will unlikely be finished because I can't download dota 2 or its workshop files due to 512kbps connection bandwidth.
+#NOTE: The hero scripts and whatnot will unlikely be finished(Hasn't even started) because I can't download dota 2 or its workshop files due to 512kbps connection bandwidth.
+
+#NOTE2: Many hero aspects have been eyeballed. I planned on adjusting them after making practical tests(nevermore coming :( ).
 
 1- Guardian Golem.
 2- Iron Golem.
