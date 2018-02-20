@@ -57,10 +57,10 @@ Name: Solar Flare		| Cast type: Ground targeted	| Damage type: Magical	|
 Does not pierce spell immunity
 {
 Description:
-Concentrates a DPS effect in an expanding area, the damage reduces as the AoE expands. 
+Concentrates a DPS effect in an expanding area, the damage decays as the AoE expands. 
 Grants vision and true sight to both teams in the AoE. The AoE appears 3 seconds after cast and the 
-effect is visible globally once it appears. The damage decays for the first 4 ticks to 800/400/200
-/100. Ticks once per second. At max level, deals 5100 damage at the bullseye.
+effect is visible globally once it appears. The damage decays for the 2nd,3rd,4th,5th ticks to 800/400/200
+/100. Ticks once per second. At max level, deals 5100 total damage at the bullseye.
 
 Cast range: 3000/4000/5000
 Initial radius: 12
