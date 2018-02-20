@@ -33,26 +33,26 @@ Name: Organic Armor	| Ability type: Passive
 {
 Description:
 Boosts the defensive aspects of the hero's attributes. Gains a point of armor/magic resistance per X AGI/INT.
-These bonuses are lost upon losing all mana.
+The ability is disabled if its user is below 5% mana.
 
-Bonus HP per STR: 6/12/18
-Bonus HP regen per STR: 0.03/0.06/0.09
-Bonus 1 Armor per X AGI: 8/7/6
-Bonus Magic resistance per X INT: 7/6/5
+Bonus HP per STR: 6/11/16
+Bonus HP regen per STR: 0.03/0.05/0.07
+Bonus 1 Armor per X AGI: 9/8/7
+Bonus Magic resistance per X INT: 8/7/6
 
 
 *SCEPTER UPGRADE
 *
-*Bonus damage per attribute: 0.3/0.5/0.7
+*Bonus damage per attribute: 0.35/0.45/0.65
 
 }
 -------------------------------------------------------------------
-Name: Toxic Emission	| Cast type: Toggle, Direction
+Name: Toxic Emission	| Cast type: Toggle
 {
 Description:
-Deals damage and reduces resistances per second in a cone in front of the caster. The damage and resistance 
-reduction are applied every half second. If the caster has a magical focus, the ability will damage and reduce
-magically and physically if physical focus, and their respective effects will be doubled.
+Deals damage and reduces resistances in a cone in front of the caster. The damage and resistance 
+reduction are applied every half second. The ability is pointed towards the initial cast direction.
+Can be recast on another point to change direction, can be disabled by self-casting or force attacking a unit.
 
 Physical damage per second: 10%/20%/30%/40% of basic attack
 Magical damage per second: 10%/20%/30%/40% of basic attack
@@ -67,15 +67,14 @@ Cone end length: 375						Cooldown: 0.5
 Name: Focus		| Cast type: No target
 {
 Description:
-Pours the caster's resistances from one to the other, leaving him vulnerable to the emptied resistance.
+Pours the caster's resistances from one to the other, zeroing the other resistance.
 
 Magical focus:
-Every point of armor(excluding bonus armor) grants 0.5% magic resistance but physical resistance will be reduced
-to 0%. Also alters "Toxic Emission" to deal magical damage only at double value.
+Every point of armor(excluding bonus armor) grants 0.5% magic resistance but user loses all armor(including bonus armor). Also alters "Toxic Emission" to deal magical damage and magic resistance reduction only at double value.
 
 Physical focus:
-Every point of positive magic resistance from any source grants 0.333 armor but magic resistance will be reduced
-to 0%. Also alters "Toxic Emission" to deal physical damage only at double value.
+Every point of positive magic resistance from any source grants 0.35 armor but magic resistance will be reduced
+to 0%. Also alters "Toxic Emission" to deal physical damage and physical resistance reduction only at double value. Does not work if user is spell immune.
 
 Balance focus:
 Sub ability which removes the focus buff.
@@ -90,6 +89,8 @@ Speed per armor: 1/2/3/4
 Speed per Magic resistance: 1/2/3/4
 Drain rate: 5/6.5/8/9.5
 Buff duration: 8/9.5/11/12.5							Cooldown: 10/11/12/13
+
+//Initially, this ability was a joke, based on Crysis' Nanosuit, but it seems interesting in some way so I decided to let it stay.
 -------------------------------------------------------------------
 
 
@@ -98,14 +99,14 @@ Hero lore :Race: Human :Age: 60-ish :Height: 181cm :Gender: Male
 An alchemist who found out a type of bacteria that existed in absolute
 filth. The bacteria showed great feats of survival in its habitat but hardened
 quickly in cleaner environments. He decided to experiment with his
-finding and eventually realized the was actually multiple different organic
+finding and eventually realized the it was actually multiple different organic
 cells that performed like a factory; one part eating its surroundings and
-shitting on the other cell, the other one taking the shit and producing
+waste onto the other cell, the other one taking the waste and producing
 hardened matter from it,etc. He experimented on these hungry organic
 microfactories and eventually found out which substances they couldn't
 eat and which ones made them produce different matter and from these
 results, managed to make a suit of armor that could adapt to virtually
-any environment so long as the armor was fed.
+any environment so long as the armor was sustained.
 
 Hero role:
 Hyper tank that can become extremely difficult to take down, only issue
