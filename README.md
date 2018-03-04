@@ -5,6 +5,9 @@ List of heroes I make for IceFrog to see(hopefully).
 
 #NOTE2: Many hero aspects have been eyeballed. I planned on adjusting them after making practical tests(nevermore coming :( ).
 
+#IMPORTANT NOTE: I have turned to Google Drive for storing my list of suggestions. I will not be updating this list anymore.
+https://drive.google.com/drive/folders/1uGuExD3QJkjaL_sVaR4j92FL7OIfOep4?usp=sharing << Link
+
 1- Guardian Golem.
 2- Iron Golem.
 3- Power Golem.
